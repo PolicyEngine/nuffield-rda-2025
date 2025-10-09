@@ -21,6 +21,10 @@ venv/
 build/
 site/dist/
 
+# Generated application files (assembled by scripts)
+docs/outline/ASSEMBLED_OUTLINE.md
+docs/full-application/ASSEMBLED_APPLICATION.md
+
 # Environment
 .env
 .env.local

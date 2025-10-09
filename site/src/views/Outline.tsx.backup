@@ -1,0 +1,238 @@
+function Outline() {
+  const questions = [
+    {
+      id: 'a',
+      title: 'A) Project Summary',
+      wordLimit: 100,
+      question: 'In non-technical language, suitable for reviewers with a wide range of backgrounds and expertise.',
+      file: 'responses/a_project_summary.md'
+    },
+    {
+      id: 'b',
+      title: 'B) Research Questions',
+      wordLimit: 200,
+      question: 'What research questions will your project answer?',
+      file: 'responses/b_research_questions.md'
+    },
+    {
+      id: 'c',
+      title: 'C) Case for Importance',
+      wordLimit: 200,
+      question: 'Why is the project needed? How is it relevant to Nuffield Foundation\'s interests? What is distinctive and how will it build on previous research?',
+      file: 'responses/c_case_for_importance.md'
+    },
+    {
+      id: 'd',
+      title: 'D) Outcomes and Influence',
+      wordLimit: 300,
+      question: 'What type of impact do you expect? How will your project achieve this impact? Outline your dissemination and influencing strategy.',
+      file: 'responses/d_outcomes_and_influence.md'
+    },
+    {
+      id: 'e',
+      title: 'E) Methods, Approach and Activities',
+      wordLimit: 750,
+      question: 'What research methods will be used and what work will be undertaken? Demonstrate activities are feasible, rigorous, and required to answer the research questions.',
+      file: 'responses/e_methods_approach_activities.md'
+    },
+    {
+      id: 'f',
+      title: 'F) Research and Engagement Team',
+      wordLimit: 250,
+      question: 'Who will be working on the project? Include name, organisation, role, expertise, and FTE %. Who will work on dissemination? Will new staff be recruited?',
+      file: 'responses/f_research_engagement_team.md'
+    },
+    {
+      id: 'g',
+      title: 'G) Budget',
+      wordLimit: null,
+      question: 'Budget table with cost categories (numbers only, no decimals or special characters)',
+      file: 'responses/g_budget.md'
+    },
+    {
+      id: 'h',
+      title: 'H) Bibliographic References',
+      wordLimit: 350,
+      question: 'References cited in the application, in author-date format (e.g. Harvard style)',
+      file: 'responses/h_bibliographic_references.md'
+    }
+  ]
+
+  const totalWords = questions
+    .filter(q => q.wordLimit !== null)
+    .reduce((sum, q) => sum + q.wordLimit, 0)
+
+  return (
+    <div className="content-section">
+      <h1>Outline Application Questions</h1>
+
+      <div style={{
+        background: '#eff6ff',
+        border: '2px solid #3498db',
+        borderRadius: '8px',
+        padding: '1.5rem',
+        marginBottom: '2rem'
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+          <div>
+            <strong style={{ fontSize: '1.1rem' }}>Deadline:</strong> October 6, 2025
+          </div>
+          <div>
+            <strong style={{ fontSize: '1.1rem' }}>Total Word Limit:</strong> {totalWords.toLocaleString()} words
+          </div>
+        </div>
+        <div style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+          <strong>How to work on this:</strong>
+          <ol style={{ margin: '0.5rem 0', paddingLeft: '1.5rem' }}>
+            <li>Edit response files in <code>docs/outline/responses/</code></li>
+            <li>Run <code>python3 assemble_outline.py</code> to validate word counts</li>
+            <li>Review <code>ASSEMBLED_OUTLINE.md</code> for assembled application</li>
+          </ol>
+        </div>
+      </div>
+
+      <div style={{ marginBottom: '2rem' }}>
+        {questions.map((q, index) => (
+          <div
+            key={q.id}
+            style={{
+              background: 'white',
+              borderRadius: '8px',
+              padding: '1.5rem',
+              marginBottom: '1rem',
+              boxShadow: '0 2px 4px rgba(0,0,0,0.08)',
+              borderLeft: '4px solid #3498db'
+            }}
+          >
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'start',
+              marginBottom: '0.75rem'
+            }}>
+              <h2 style={{ margin: 0, color: '#2c3e50', fontSize: '1.25rem' }}>
+                {q.title}
+              </h2>
+              <div style={{
+                background: q.wordLimit ? '#3498db' : '#95a5a6',
+                color: 'white',
+                padding: '0.25rem 0.75rem',
+                borderRadius: '12px',
+                fontSize: '0.85rem',
+                fontWeight: '600',
+                whiteSpace: 'nowrap',
+                marginLeft: '1rem'
+              }}>
+                {q.wordLimit ? `${q.wordLimit} words` : 'Table'}
+              </div>
+            </div>
+
+            <p style={{
+              color: '#555',
+              marginBottom: '1rem',
+              lineHeight: '1.6',
+              fontSize: '0.95rem'
+            }}>
+              {q.question}
+            </p>
+
+            <div style={{
+              background: '#f8f9fa',
+              padding: '0.75rem',
+              borderRadius: '4px',
+              fontSize: '0.85rem',
+              fontFamily: 'monospace',
+              color: '#7f8c8d'
+            }}>
+              📝 Edit: <code>docs/outline/{q.file}</code>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{
+        background: '#f0fdf4',
+        borderLeft: '4px solid #2ecc71',
+        padding: '1.5rem',
+        borderRadius: '4px',
+        marginBottom: '2rem'
+      }}>
+        <h3 style={{ marginTop: 0, color: '#2c3e50' }}>Priority Questions to Address</h3>
+        <p style={{ marginBottom: '1rem' }}>Your application must address one or more of these:</p>
+        <ol style={{ marginBottom: 0, lineHeight: '1.8' }}>
+          <li><strong>Building a prosperous and fair society</strong><br />
+            <span style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+              Economic opportunity, income distribution, poverty
+            </span>
+          </li>
+          <li><strong>Creating an inclusive society</strong><br />
+            <span style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+              Social cohesion, equality, access to services
+            </span>
+          </li>
+          <li><strong>Ensuring science and technology benefit people</strong><br />
+            <span style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+              AI impacts, digital inclusion, ethical tech use
+            </span>
+          </li>
+          <li><strong>Developing climate change policies</strong><br />
+            <span style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+              Net zero transitions, climate adaptation
+            </span>
+          </li>
+          <li><strong>Building trustworthy and effective institutions</strong><br />
+            <span style={{ fontSize: '0.9rem', color: '#7f8c8d' }}>
+              Democratic participation, public trust, governance
+            </span>
+          </li>
+        </ol>
+      </div>
+
+      <div style={{
+        background: 'white',
+        borderRadius: '8px',
+        padding: '1.5rem',
+        boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
+      }}>
+        <h3 style={{ marginTop: 0 }}>Assessment Criteria</h3>
+        <p>Applications are assessed on:</p>
+        <ul style={{ lineHeight: '1.8', marginBottom: 0 }}>
+          <li>Relevance to priority questions</li>
+          <li>Potential impact on improving lives in the UK</li>
+          <li>Research methodology quality and rigor</li>
+          <li>Team expertise and track record</li>
+          <li>Value for money</li>
+        </ul>
+      </div>
+
+      <div style={{
+        marginTop: '2rem',
+        padding: '1rem',
+        background: '#fff3cd',
+        borderLeft: '4px solid #f59e0b',
+        borderRadius: '4px'
+      }}>
+        <strong>📚 Reference Materials:</strong>
+        <ul style={{ marginBottom: 0, marginTop: '0.5rem' }}>
+          <li>
+            <a href="/nuffield-rda-2025/portfolio">
+              Project Portfolio Options →
+            </a>
+            {' '}(£300k-£350k components)
+          </li>
+          <li>
+            <a
+              href="https://github.com/PolicyEngine/nuffield-rda-2025/blob/main/materials/previous-application-2024.md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Previous successful application (2024) ↗
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  )
+}
+
+export default Outline

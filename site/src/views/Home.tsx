@@ -83,6 +83,32 @@ function Home() {
         for "Enhancing, localising and democratising tax-benefit policy analysis" - a project
         focused on improving PolicyEngine's comprehensiveness, accuracy, and accessibility.
       </p>
+      <p>
+        <strong>Previous Application Materials:</strong>
+      </p>
+      <ul>
+        <li>
+          <a href="https://docs.google.com/document/d/1P0gTHNfVcXyIMuW5w4T8Ji_uSaqnhjOPmjU8J5YVW5I/edit?tab=t.0"
+             target="_blank"
+             rel="noopener noreferrer">
+            View full application (Google Doc)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PolicyEngine/nuffield-rda-2025/blob/main/materials/previous-application-2024.md"
+             target="_blank"
+             rel="noopener noreferrer">
+            Full application with hyperlinks (markdown)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/PolicyEngine/nuffield-rda-2025/blob/main/materials/previous-application-summary.md"
+             target="_blank"
+             rel="noopener noreferrer">
+            Executive summary and analysis
+          </a>
+        </li>
+      </ul>
 
       <h2>Assessment Criteria</h2>
       <ul>

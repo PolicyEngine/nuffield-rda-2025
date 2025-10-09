@@ -1,0 +1,431 @@
+# Nuffield R&D Fund Project Components
+# Brainstormed ideas organized by theme with effort estimates
+
+metadata:
+  total_budget_target: 325000  # Mid-point of 300-350k range
+  duration_years: 2
+  currency: GBP
+
+# Effort estimates in person-months (pm)
+# Assuming £8,000/month blended rate (staff + overheads)
+
+themes:
+  - id: model
+    title: "Model Enhancement"
+    priority: high
+    description: "Expanding model coverage and improving precision"
+    components:
+      - id: council_tax
+        title: "Council Tax Modeling"
+        effort_pm: 4
+        cost_estimate: 32000
+        priority: high
+        description: "Add council tax to microsimulation model with local authority variations"
+        deliverables:
+          - "Council tax calculation by band and area"
+          - "Integration with existing tax-benefit model"
+          - "Validation against MHCLG data"
+
+      - id: vat_distribution
+        title: "VAT Distributional Analysis (Household-level)"
+        effort_pm: 1
+        cost_estimate: 8000
+        priority: medium
+        description: "Enhance VAT modeling to show household-level impacts"
+        deliverables:
+          - "Household VAT burden by income decile"
+          - "Integration with consumption data"
+
+      - id: monthly_lfs_updates
+        title: "Monthly Labor Force Survey Integration"
+        effort_pm: 4
+        cost_estimate: 32000
+        priority: medium
+        description: "Move from annual to monthly microdata updates using LFS"
+        deliverables:
+          - "Automated monthly data pipeline"
+          - "Nowcasting methodology"
+          - "Real-time policy analysis capability"
+
+      - id: policy_buffer
+        title: "Policy Response Buffer"
+        effort_pm: 5
+        cost_estimate: 50000
+        cost_breakdown:
+          staff_time: 40000  # 5pm
+          rapid_response_reserve: 10000  # Weekend/urgent work premium
+        priority: high
+        description: "Rapid response to Budgets, manifestos, and emerging policies. Flexible scope can include model enhancements (VAT, monthly LFS) if situations warrant."
+        deliverables:
+          - "Spring Budget response (March, 48-hour turnaround)"
+          - "Autumn Budget response (October/November, 48-hour turnaround)"
+          - "Election manifesto comparative analysis"
+          - "Ad-hoc policy requests from stakeholders"
+          - "Model enhancements as needed for timely analysis"
+        notes: "Covers 2 Spring + 2 Autumn Budgets over 24 months. Flexible to address urgent policy moments."
+
+  - id: app
+    title: "App Development"
+    priority: high
+    description: "User experience and accessibility improvements"
+    components:
+      - id: panel_data
+        title: "Panel Data Microsimulation"
+        effort_pm: null  # TBD - need to define policy question first
+        cost_estimate: null
+        priority: low
+        status: exploratory
+        description: "Longitudinal analysis - specific policy question TBD"
+        questions:
+          - "What policy question would this address?"
+          - "What data sources available?"
+
+      - id: olg_model
+        title: "Overlapping Generations (OLG) General Equilibrium"
+        effort_pm: 6
+        cost_estimate: 100000  # Includes expert consultants
+        priority: low
+        status: exploratory
+        description: "Dynamic general equilibrium modeling for long-term policy analysis"
+        deliverables:
+          - "OLG model calibrated to UK economy"
+          - "Integration with microsimulation"
+          - "Pension and fiscal sustainability analysis"
+        notes: "Would require expert economic consultants (e.g., IFS, academic partners)"
+
+      - id: economic_growth
+        title: "Economic Growth Modeling"
+        effort_pm: null
+        cost_estimate: null
+        priority: low
+        status: exploratory
+        description: "Endogenous growth modeling - explore OBR methodology"
+        questions:
+          - "Does OBR do this? How?"
+          - "What's the added value over existing tools?"
+
+      - id: ai_report_authoring
+        title: "AI-Powered Report Authoring Tool"
+        effort_pm: 6
+        cost_estimate: 53000
+        cost_breakdown:
+          staff_time: 48000  # 6pm
+          api_costs: 5000  # Claude/GPT-4 API usage
+        priority: high
+        description: "LLM-powered tool to generate policy analysis reports from natural language queries"
+        deliverables:
+          - "Natural language query interface ('How much would doubling Child Benefit cost?')"
+          - "Automated chart and table generation"
+          - "Export to PDF/Word/HTML formats"
+          - "Template library for common policy analyses"
+        notes: "Builds on proven AI pilot from previous Nuffield project. THE bridge from elite to democratic access."
+
+      - id: data_integration
+        title: "OBR/HMT Data Integration"
+        effort_pm: 3
+        cost_estimate: 28000
+        cost_breakdown:
+          staff_time: 28000  # 3.5pm
+        priority: medium
+        description: "Validation against official government costings and forecasts"
+        deliverables:
+          - "OBR scorecard comparison dashboard"
+          - "HMT policy costing integration"
+          - "Automatic validation against official estimates"
+          - "Discrepancy flagging and explanation"
+        notes: "Builds credibility for civil society users by showing alignment with official projections"
+
+      - id: mobile_app
+        title: "Mobile Application"
+        effort_pm: 8
+        cost_estimate: 64000
+        priority: low
+        status: exploratory
+        description: "Native mobile app for household calculations"
+        deliverables:
+          - "iOS and Android apps"
+          - "Simplified household calculator"
+          - "Push notifications for policy changes"
+
+      - id: notifications_system
+        title: "Policy Change Notification System"
+        effort_pm: 2
+        cost_estimate: 16000
+        priority: medium
+        description: "Alert users to relevant policy changes"
+        deliverables:
+          - "User preference system"
+          - "Automated policy change detection"
+          - "Email and in-app notifications"
+
+      - id: local_media_training
+        title: "Local Media Partnership Program"
+        effort_pm: 2
+        cost_estimate: 20000
+        cost_breakdown:
+          staff_time: 12000
+          event_partnership_costs: 8000
+        priority: high
+        description: "Train local journalists to use PolicyEngine's free tools for constituency-level analysis"
+        deliverables:
+          - "Workshops with regional press associations"
+          - "Templates for 'Your Constituency Budget Impact' stories"
+          - "Automated local area report tutorials"
+          - "Journalist training materials"
+        notes: "Capitalizes on 650 constituencies from previous grant. Maintains neutrality - journalists analyze any policy proposal."
+
+      - id: parliamentary_toolkit
+        title: "Parliamentary Constituency Toolkit"
+        effort_pm: 2
+        cost_estimate: 15000
+        cost_breakdown:
+          staff_time: 15000
+        priority: high
+        description: "Enhanced constituency views and training for MPs and parliamentary staff"
+        deliverables:
+          - "Enhanced web app constituency-level analysis views"
+          - "Training sessions for parliamentary researchers"
+          - "Templates for constituency impact reports"
+          - "Documentation for MPs and staff"
+        notes: "MPs already requesting this capability. Data exists from previous grant. Maintains neutrality - MPs from any party analyze any proposal."
+
+  - id: growth
+    title: "Growth & Engagement"
+    priority: high
+    description: "Expanding user base and measuring impact"
+    components:
+      - id: crm_investment
+        title: "CRM System & User Management"
+        effort_pm: 2
+        cost_estimate: 24000
+        cost_breakdown:
+          staff_time: 10000  # 1.25 pm implementation + integration
+          software_licenses: 14000  # £7k/year x 2 years (enterprise CRM)
+        priority: medium
+        description: "Professional CRM for user engagement tracking and analytics"
+        deliverables:
+          - "Enterprise CRM system implementation"
+          - "User segmentation and targeting"
+          - "Engagement analytics dashboard"
+          - "Integration with training/event registration"
+        notes: "Enterprise CRM (HubSpot/Salesforce) realistic cost. Setup always more complex than expected."
+
+      - id: conference_program
+        title: "Conference Presentations & Academic Engagement"
+        effort_pm: 3
+        cost_estimate: 30000
+        cost_breakdown:
+          staff_time: 12000  # 1.5 pm
+          travel_conferences: 18000  # £3k per international conf x 6
+        priority: medium
+        description: "Present at major economics and policy conferences"
+        deliverables:
+          - "6-8 conference presentations over 2 years"
+          - "Academic paper submissions"
+          - "Research partnerships"
+
+      - id: hackathon_contest
+        title: "PolicyEngine Analysis Contest/Hackathon"
+        effort_pm: 2
+        cost_estimate: 20000
+        cost_breakdown:
+          staff_time: 8000  # 1 pm per event x 2
+          prizes: 10000  # £5k per event
+          event_costs: 2000  # Venue, materials
+        priority: medium
+        description: "Competition to drive innovative uses of PolicyEngine"
+        deliverables:
+          - "Annual hackathon event"
+          - "Prize pool for best analyses"
+          - "Showcase of creative applications"
+
+      - id: external_citations_program
+        title: "External Citations and Adoption Program"
+        effort_pm: 5
+        cost_estimate: 40000
+        cost_breakdown:
+          staff_time: 30000  # 3.75pm outreach/support
+          travel_events: 10000  # Regional visits, smaller events
+        priority: high
+        description: "Drive external citations/usage through flexible engagement: hybrid trainings, discovery of user needs, regional visits, community events"
+        deliverables:
+          - "Target: 50+ external citations/reports over 24 months"
+          - "Hybrid training sessions (virtual + in-person as needed)"
+          - "Regional visits to local organizations"
+          - "Smaller community-building events"
+          - "User needs discovery and tailored support"
+        notes: "Output-focused (citations) vs input-focused (fixed training schedule). If product is good enough, usage scales naturally with targeted support."
+
+      - id: annual_symposium
+        title: "Annual User Symposium (Continuation)"
+        effort_pm: 2
+        cost_estimate: 25000
+        cost_breakdown:
+          staff_time: 8000  # 1 pm per symposium x 2
+          venue_catering: 12000  # £6k per event
+          travel_accommodation: 5000
+        priority: high
+        description: "Continue annual gathering of PolicyEngine users"
+        deliverables:
+          - "2 annual symposia"
+          - "User presentations and case studies"
+          - "Networking and collaboration"
+
+      - id: internal_reports
+        title: "Internal Report Production (Target: X reports)"
+        effort_pm: null
+        cost_estimate: null
+        priority: medium
+        status: needs_definition
+        description: "Staff time for producing PolicyEngine reports"
+        questions:
+          - "What's the target number X?"
+          - "What topics/themes?"
+
+      - id: external_citations
+        title: "External Report/Citation Targets (Target: Y citations)"
+        effort_pm: null
+        cost_estimate: null
+        priority: medium
+        status: needs_definition
+        description: "Track and drive external usage"
+        questions:
+          - "What's the target number Y?"
+          - "What outreach strategies?"
+
+      - id: poverty_dashboard
+        title: "Poverty & Child Poverty Dashboard"
+        effort_pm: 4
+        cost_estimate: 32000
+        cost_breakdown:
+          staff_time: 32000  # 4pm
+        priority: high
+        description: "Interactive public dashboard tracking poverty impacts of policies"
+        deliverables:
+          - "Real-time poverty tracking by demographics"
+          - "Child poverty deep-dive analysis"
+          - "Policy scenario comparison tool"
+          - "Public-facing interactive dashboard"
+        notes: "HIGH political relevance. Child poverty is major policy focus. Demonstrates real-world impact."
+
+      - id: civil_society_training
+        title: "Civil Society Training & Support Program"
+        effort_pm: 2
+        cost_estimate: 20000
+        cost_breakdown:
+          staff_time: 20000  # 2pm
+        priority: medium
+        description: "Training workshops for NGOs and charities on using free PolicyEngine tools"
+        deliverables:
+          - "Specialized workshops for civil society organizations"
+          - "Pre-built Python notebook templates for policy analysis"
+          - "Web app workflow documentation"
+          - "Co-creation sessions with major organizations"
+        notes: "All PolicyEngine tools are FREE (web app, Python package). This provides training/support, not paid access. Maintains strict neutrality."
+
+# Recommended portfolio (not fixed options - flexible component menu)
+recommended_portfolio:
+  id: scaling_package
+  title: "Scaling Elite-Validated Tools to Civil Society"
+  total_cost: 324000
+  description: "Scale proven infrastructure from elite adoption to democratic access"
+  strategic_narrative: "Following elite validation (Treasury, No 10), democratize access through AI, local data, and training"
+
+  components:
+    # Model Enhancement (£82k)
+    - council_tax  # £32k
+    - policy_buffer  # £50k (UP - flexible scope)
+
+    # App Development (£110k)
+    - ai_report_authoring  # £53k (UP - includes API costs)
+    - data_integration  # £28k (UP - quality buffer)
+    - local_media_training  # £20k (NEW)
+    - parliamentary_toolkit  # £15k (NEW)
+
+    # Growth & Engagement (£132k)
+    - monthly_trainings  # £40k (UP)
+    - annual_symposium  # £25k
+    - poverty_dashboard  # £32k
+    - conference_program  # £30k
+    - crm_investment  # £24k (UP)
+    - civil_society_training  # £20k (NEW)
+
+  theme_totals:
+    model: 82000
+    app: 110000
+    growth: 132000
+
+# Alternative budget levels
+alternatives:
+  - id: conservative
+    title: "Conservative (£300k)"
+    total_cost: 300000
+    changes_from_recommended:
+      remove:
+        - civil_society_training  # -£20k
+      reduce:
+        - crm_investment: 16000  # -£8k (basic CRM vs enterprise)
+
+  - id: ambitious
+    title: "Ambitious (£350k)"
+    total_cost: 350000
+    changes_from_recommended:
+      add:
+        - evidence_automation: 20000  # Support No 10/IFS/RF alignment
+        - enhanced_symposium_venue: 5000  # Larger capacity
+
+# Components explicitly deferred (can add via policy buffer if needed)
+deferred_components:
+  - vat_distribution  # Can enhance via policy buffer if Budget requires it
+  - monthly_lfs_updates  # Can add via policy buffer if needed for real-time analysis
+  - mobile_app  # Web-first priority
+  - hackathon_contest  # Better for Year 2 when community larger
+  - olg_model  # Too ambitious for this scope
+  - panel_data  # Need to define policy question first
+
+# Research questions (aligned with scaling narrative)
+research_questions:
+  primary:
+    - question: "How can AI democratize access to elite-grade policy analysis tools while maintaining accuracy and trust?"
+      priority_questions: [3, 5]
+      components: [ai_report_authoring, data_integration]
+
+    - question: "What is the impact of providing local policymakers and civil society with constituency-level microsimulation capabilities?"
+      priority_questions: [2, 5]
+      components: [local_media_training, parliamentary_toolkit, civil_society_training]
+
+    - question: "Can rapid-response evidence provision improve the quality and inclusivity of policy debates during critical moments (Budgets, elections)?"
+      priority_questions: [1, 5]
+      components: [policy_buffer, poverty_dashboard]
+
+  secondary:
+    - question: "What are the distributional impacts of local and national tax interactions (council tax combined with national reforms)?"
+      priority_questions: [1]
+      components: [council_tax, poverty_dashboard]
+
+    - question: "How do different stakeholder groups (media, advocates, local councils, MPs) utilize microsimulation tools, and what support maximizes impact?"
+      priority_questions: [2, 5]
+      components: [monthly_trainings, crm_investment, conference_program]
+
+# Links to Nuffield priority questions
+priority_alignment:
+  question_1_prosperity:
+    - council_tax
+    - vat_distribution
+    - poverty_dashboard
+    - policy_buffer
+  question_2_inclusion:
+    - ai_report_authoring
+    - mobile_app
+    - monthly_trainings
+    - poverty_dashboard
+  question_3_technology:
+    - ai_report_authoring
+    - notifications_system
+    - monthly_lfs_updates
+    - data_integration
+  question_5_institutions:
+    - policy_buffer
+    - data_integration
+    - conference_program
+    - annual_symposium

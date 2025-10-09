@@ -1,0 +1,192 @@
+# Nuffield Foundation Research, Development & Analysis Fund
+# Outline Application Structure
+
+metadata:
+  program: 'Nuffield Foundation R&D Fund'
+  application_type: 'Outline'
+  deadline: '2025-10-06'
+  typical_award: 300000
+  max_award: 500000
+  exceptional_max: 750000
+  duration_months_min: 6
+  duration_months_max: 36
+  portal_url: 'https://www.nuffieldfoundation.org/funding/research-development-and-analysis-fund'
+
+# Priority questions (applicants select one or more)
+priority_questions:
+  - id: 1
+    title: 'Building a prosperous and fair society'
+    areas:
+      - 'Economic opportunity and mobility'
+      - 'Income distribution and poverty'
+      - 'Employment and skills development'
+
+  - id: 2
+    title: 'Creating an inclusive society'
+    areas:
+      - 'Social cohesion and integration'
+      - 'Equality and tackling discrimination'
+      - 'Access to services and opportunities'
+
+  - id: 3
+    title: 'Ensuring science and technology benefit people'
+    areas:
+      - 'AI and automation impacts on society'
+      - 'Digital inclusion and access'
+      - 'Ethical use of technology'
+
+  - id: 4
+    title: 'Developing climate change policies'
+    areas:
+      - 'Net zero transitions'
+      - 'Climate adaptation strategies'
+      - 'Just transitions for affected communities'
+
+  - id: 5
+    title: 'Building trustworthy and effective institutions'
+    areas:
+      - 'Democratic participation'
+      - 'Public trust in institutions'
+      - 'Effective governance'
+
+# Main application sections
+sections:
+  - id: a_project_summary
+    title: 'A) Project Summary'
+    required: true
+    word_limit: 100
+    question: |
+      Please answer the following questions in non-technical language, suitable for
+      reviewers with a wide range of backgrounds and expertise.
+    file: 'responses/a_project_summary.md'
+
+  - id: b_research_questions
+    title: 'B) Research Questions'
+    required: true
+    word_limit: 200
+    question: 'What research questions will your project answer?'
+    file: 'responses/b_research_questions.md'
+
+  - id: c_case_for_importance
+    title: 'C) Case for Importance'
+    required: true
+    word_limit: 200
+    question: |
+      Why is the project needed?
+
+      How is the project relevant to the Nuffield Foundation's interests and areas of focus?
+
+      What is distinctive about the project and how will it build on previous research?
+    file: 'responses/c_case_for_importance.md'
+
+  - id: d_outcomes_and_influence
+    title: 'D) Outcomes and Influence'
+    required: true
+    word_limit: 300
+    question: |
+      What type of impact do you expect your project to have? You can select as many as you wish:
+      - Informing change to policies, systems or legislation
+      - Informing practice change
+      - Improving or advancing understanding or awareness of an issue
+      - Changing attitudes or perceptions
+      - Providing opportunity and building capability
+
+      How will your project and its outputs achieve this impact?
+
+      As part of this, outline your dissemination and influencing strategy, including
+      the audiences that you will prioritise and the range of ways you plan to engage with them.
+    file: 'responses/d_outcomes_and_influence.md'
+
+  - id: e_methods_approach_activities
+    title: 'E) Methods, Approach and Activities'
+    required: true
+    word_limit: 750
+    question: |
+      What research methods will be used and what work will be undertaken?
+
+      You should demonstrate that the activities planned are feasible and rigorous,
+      as well as both sufficient and required to answer the research questions.
+
+      Please refer to the guidance in Section 5 of the Guide for Applicants when
+      answering this question.
+    file: 'responses/e_methods_approach_activities.md'
+
+  - id: f_research_engagement_team
+    title: 'F) Research and Engagement Team'
+    required: true
+    word_limit: 250
+    question: |
+      Who will be working on the project? Include their name, organisation, and role
+      and briefly outline person's relevant expertise and experience.
+      Provide the proportion of each person's FTE time allocated to this project.
+
+      Who will work on the dissemination and influencing and strategy?
+
+      State whether any new staff will be recruited, and into which roles.
+    file: 'responses/f_research_engagement_team.md'
+
+  - id: g_budget
+    title: 'G) Budget'
+    required: true
+    word_limit: null  # Table format, no word limit
+    question: |
+      Set out, in the table below, the funds requested for each of the broad cost
+      categories listed. The types of cost we expect to be included under each of
+      the categories can be found when clicking on the amount input boxes.
+
+      Please type numbers only and do not include any of the following in your entries:
+      decimals, text, special characters (e.g. £, $) or commas.
+
+      Budget Categories:
+      - Staff costs: PI Time
+      - Staff costs: Co-I Time
+      - Staff costs: Team Members
+      - Staff costs: Consultants
+      - Staff costs: Overheads and Estate costs
+      - Non staff costs: Qualitative research
+      - Non staff costs: Quantitative research
+      - Non staff costs: Communications and stakeholder engagement
+      - Non staff costs: Equipment
+      - Non staff costs: Other direct costs
+    file: 'responses/g_budget.md'
+    notes: 'Budget table - see budget/ directory for details'
+
+  - id: h_bibliographic_references
+    title: 'H) Bibliographic References'
+    required: true
+    word_limit: 350
+    question: |
+      Restricted to those cited in the application, and ideally presented in
+      author-date format (e.g. Harvard style).
+    file: 'responses/h_bibliographic_references.md'
+
+# Optional additional information
+attachments:
+  - id: additional_supporting_doc
+    title: 'Additional Supporting Document'
+    required: false
+    recommended: false
+    question: |
+      We would strongly prefer that all relevant information regarding your outline
+      information is covered in the sections above.
+
+      However, if you feel that it is absolutely necessary to provide some additional
+      information e.g. in the form of charts, diagrams, tables, or budgetary explanation,
+      you may upload one additional supporting document.
+    file: 'attachments/additional_supporting_doc.pdf'
+
+# Assessment criteria
+assessment_criteria:
+  - 'Relevance to priority questions'
+  - 'Potential impact on improving lives in the UK'
+  - 'Research methodology quality and rigor'
+  - 'Team expertise and track record'
+  - 'Value for money'
+
+# Notes for applicants
+notes: |
+  - Applications must be written in non-technical language
+  - Must address one or more priority questions
+  - UK-based organization affiliation required
+  - Two-stage process: Outline, then Full application if invited
+  - All word limits are strict

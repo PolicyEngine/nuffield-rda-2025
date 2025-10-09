@@ -1,0 +1,619 @@
+# **[SUMMARY]{.mark}**
+
+*[This should be written in non-technical language suitable for reviewers who are not experts in the field. It should give a clear overview of what you intend to do, why it's needed, who will use it, and what difference it would make to whom. Please ensure you update your summary in the light of any feedback we gave you in response to your outline application. (204/250 words)]{.mark}*
+
+PolicyEngine\'s free and open-source microsimulation model enables anyone to compute the impact of public policy, both at a personal and societal level. With broad coverage of the tax-benefit system, PolicyEngine democratises public policy, providing economists, researchers, journalists, advocates, policymakers, and legislators with the tools, data, and evidence to power their policy curiosity. With the capacity to disaggregate data by gender, age, income, and wealth, PolicyEngine\'s interactive data visualisations powerfully illustrate the intersectionality of disadvantage.
+
+To ensure upcoming debates about childcare, public services, and other critical issues are well served by data and engage a broad community of stakeholders, this application seeks to advance PolicyEngine's comprehensiveness, accuracy, and accessibility:
+
+1.  Comprehensiveness
+
+    a.  Adding childcare and public services to rules engine
+
+    b.  Disaggregating data by local authorities and constituencies
+
+2.  Accuracy
+
+    a.  Expanding validation against other tax-benefit models
+
+3.  Accessibility
+
+    a.  Beta testing for quality assurance
+
+    b.  Comprehensive model documentation
+
+    c.  User-centric interface enhancements and AI integration
+
+    d.  Growing the user community
+
+By pursuing these enhancements, PolicyEngine aims to become an indispensable tool for evidence-based policymaking, fostering informed debate, and driving positive societal change. The proposed initiatives will not only expand the model\'s capabilities but also ensure its reliability, transparency, and usability for a wide range of stakeholders, ultimately contributing to better policy outcomes for all.
+
+## [If you wish to propose a partnership funding model, please identify here the proposed co-funder(s) and set out the reasons why a partnership funding model would be beneficial to the project. (NO WORD LIMIT STATED)]{.mark}
+
+N/A
+
+# **CASE FOR IMPORTANCE OF THE PROJECT**
+
+*Why is the project important and is there a particular need for it now? How does it relate to recent policy or practice developments in the field? What is new or distinctive about the project and the findings it would produce? How would it build on previous or current work by you and/or others? What change do you anticipate this project would bring about in the short and longer term? (1003/700 words)*
+
+This project addresses a gap in the availability of comprehensive, accurate, and accessible modelling of tax and benefit programs. Deploying advanced data science to estimate policy impacts at the household and national levels, PolicyEngine works to improve the economic security of UK residents by:
+
+- Enabling policy experts to integrate macro and household-level quantitative evidence into their research.
+
+<!-- -->
+
+- Equipping advocates to communicate the impact of policy debates on their stakeholders.
+
+- Enhancing legislator capacity to analyse how reforms affect constituents.
+
+In the past 12 months, PolicyEngine has attracted 2,300 UK visitors and 59,000 global visitors, demonstrating growing interest in accessible microsimulation.
+
+A video demonstrating the tool is available at [[https://demo.policyengine.org]{.underline}](https://demo.policyengine.org).
+
+*Comprehensiveness*
+
+Existing microsimulators lack the capacity to model programs central to current policy debates. For example, during the 2019 election, the Green Party could not provide the poverty or distributional impacts of its basic income and carbon tax proposal. In 2021, PolicyEngine was able to provide these [[estimates]{.underline}](https://policyengine.org/uk/research/the-green-party-manifesto-at-policyfest) that were still central to policy debates (Woodruff, 2022). Martin Farley, of the Green Party's Tax and Fiscal Policy Working Group has offered these reflections on PolicyEngine's contribution to the development of these proposals: "The interface lays out the policy options in a clear structure and allows users to explore policy options with just a few clicks. Complex policy proposals now at a speed that just wasn\'t possible a few years ago."
+
+*Accuracy*
+
+PolicyEngine generates the most accurate modelling of the tax and benefits system available in the UK, innovatively integrating the Family Resources Survey and other data sources allows experts to analyse the impact of tax and benefit reforms in one model with [[modern data science-based validation methods]{.underline}](https://policyengine.org/uk_data_enhancement.pdf) (Woodruff & Ghenis, 2024). The model goes beyond static analysis as well, applying customisable elasticities to estimate the impacts of reforms on labour supply and downstream macroeconomic outcomes.
+
+PolicyEngine provides unheralded transparency into the accuracy of this model. To track how our data enhancement performs, we compare PolicyEngine\'s outputs with thousands of data points from the original survey data, and official government data and projections---a comparison available to all users, updated instantly with every change to the model.[ ]{.mark}
+
+To date, [[our validation result demonstrate high performance against official statistics]{.underline}](https://policyengine-uk-validation.streamlit.app/) (PolicyEngine, 2024b),. For example, PolicyEngine deviates from administrative revenue and spending data by less than ten percent while the other tax-benefit models often deviate by as much as forty percent (van de Ven and Popova, 2024). Shaped and improved by feedback across international conference presentations, our methods are at the cutting edge of microsimulation.
+
+Our open-source platform approach further contributes to PolicyEngine accuracy. We welcome and invite live and continuous peer review and contributions from a wide community of researchers, modellers, and analysts, empowered with access to all of our software on GitHub, to ensure the highest possible levels of accountability and accuracy.
+
+*Accessibility*
+
+Until recently, only academics and insiders at select think tanks had access to microsimulation. Advocates and media face even higher barriers, unable to licence a model or the time to learn one. But even experts currently face a type of accessibility challenge: existing models are too slow to build rapid feedback and intuition about fast-evolving policy debates. As result, policy development and analysis has been too often limited to elites and underinformed by data.
+
+PolicyEngine's modern Python framework allows experts to run simulations in minutes, testing intuitions about household and distributional impacts, and identifying unintended consequences of even well-intentioned tax and benefit reforms. Without any dedicated communications or outreach resources, and with only PolicyEngine's Chief Technology Officer based in the UK, a growing number of organisations have deployed PolicyEngine:
+
+- The National Institute of Economic and Social Research (NIESR) used PolicyEngine for their Autumn Statement analysis, garnering 275 views and 67 downloads. The analysis was featured in major outlets including The Times, Financial Times, and Telegraph. NIESR senior economist Max Mosley recognised PolicyEngine\'s potential to democratise the entire process of analysis by making it available to people with non-technical backgrounds.
+
+- The Centre for Policy Studies has used PolicyEngine for three reports, on equalising National Insurance thresholds with the Personal Allowance (which became law in 2022), reforms to the marriage allowance (research they commissioned from us), and intergenerational policy analysis. Director Robert Colvile praised PolicyEngine as \"a valuable addition to the UK policy space, democratising access to economic modelling.\"
+
+- HM Treasury data scientists requested our expertise to aid in modelling reforms involving multiple datasets.
+
+- MPs from the Conservatives (John Penrose MP and Lord Balfe) and Labour (Richard Burgon MP) have sought modelling on welfare reforms, Child Benefit changes, and tax threshold freezes.
+
+- King\'s College London and Ipsos used PolicyEngine for an interactive public workshop, with the project director calling it \"an essential tool in the fight to democratise economics.\"
+
+- The University of Warwick awarded us a subgrant to add capital gains to our model and support their research using the feature.
+
+- The Green Party deployed PolicyEngine to model basic income and carbon tax proposals. 30 key policymakers and policy analysts in the Green Party are using PolicyEngine to develop the 2024 manifesto, ensuring it will be its most data-driven manifesto. PolicyEngine-powered research will be presented at the BIEN conference in Bath by Green Party researchers later this year.
+
+- The UBI Labs Northern Ireland commissioned a study exploring the impact of a universal basic income paired with tax and benefit reforms in Northern Ireland.
+
+- The Adam Smith Institute, Social Market Foundation, Centre Think Tank, and Robert Schalkenbach Foundation have cited PolicyEngine UK analyses in reports.
+
+Usage abroad charts a path for further UK growth. US adoption includes multiple members of Congress, state-level policymakers in New York and DC, and New York City councilmembers, as well as think tanks and advocacy organisations across the political spectrum. The Canadian government is contributing to PolicyEngine Canada, and conferences around the world have invited us to present research using PolicyEngine US and UK models. Beyond the 230+ X users following the PolicyEngineUK account, over 1,200 X users follow the global PolicyEngine account.
+
+This warm embrace gives us confidence in the significant unmet interest for accessible tax and benefit microsimulation, which PolicyEngine is well-positioned to address.
+
+# **AIMS AND OBJECTIVES**
+
+*Please set out clearly the project's aims and objectives and describe the underpinning conceptual framework or theory of change. (300/300 words)*
+
+PolicyEngine democratises public policy analysis, empowering voters and lawmakers to align policy with shared values. Our free microsimulation model connects household budgets and national policy, ensuring that all players -- journalists, think-tanks, academics, and policymakers -- have free and fast tools to accelerate evidence-based policy conversations. With the general election at hand, we are prioritising enhancements to make these policy debates the most transparent and data-informed.
+
+Our key objectives are to:
+
+- Expand our comprehensive microsimulator to model childcare subsidies and public services, and create microdatasets representative of each local authority and parliamentary district.
+
+- Enhance accuracy by creating an open dashboard comparing PolicyEngine\'s outputs to other microsimulation models at the household level (similar to our US calibration dashboard: [[https://policyengine-us-calibration-validation.streamlit.app/]{.underline}](https://policyengine-us-calibration-validation.streamlit.app/)).
+
+- Increase accessibility through:
+
+  - A user-centric, AI-capable design
+
+  - Trainings, workshops, and engagements to give users the resources to make the most of our software platform
+
+  - Rigorous beta testing with policy professionals to ensure new features are reliable and user-friendly before public release
+
+  - Comprehensive model documentation to promote transparency and facilitate expert review
+
+To date, PolicyEngine has relied on the co-founders\' donations of time and funds and those of a dedicated community of open-source contributors. Philanthropic investments will leverage these contributions, accelerating PolicyEngine\'s step-change enhancements and speeding their adoption by think tanks, advocacy groups, policymakers, legislators, journalists, media, and individuals.
+
+# **METHOD, APPROACH and ACTIVITIES**
+
+*Please set out in detail what each proposed workstream or activity would involve, and how it would deliver against the project aims and objectives. You must demonstrate that the project is feasible and well-designed, that the approach is fit for purpose, the methodology robust, and the activities sequenced appropriately. (4544/2800 words)*
+
+PolicyEngine democratises best-in-class public policy analysis by combining a comprehensive tax-benefit rules engine, an accurate economic data model, and an accessible web interface. Our platform has already gained significant traction, offering many of the features that users identified as high priorities in a recent microsimulation landscape scan led by Mike Brewer and commissioned by the Joseph Rowntree Foundation. As a result, PolicyEngine has seen impressive user uptake despite our limited UK staff all of whom have technology, not engagement or communications responsibilities.
+
+To further enhance our platform\'s capabilities and impact, we propose a set of step-change improvements across three key dimensions: comprehensiveness, accuracy, and accessibility. These enhancements will extend PolicyEngine\'s modelling capacities, refine its precision, and expand its reach to a broader audience.
+
+Firstly, we will augment PolicyEngine\'s comprehensiveness by incorporating childcare and public services into our modelling framework and disaggregating impacts by local authorities and political constituencies. These expansions will require changes to both the rules engine, which calculates taxes and benefits based on household characteristics, and the underlying household dataset upon which the rules are applied. Our machine learning-powered microdata enhancement procedure will be extended to enable granular, local-level analysis.
+
+Secondly, we will bolster PolicyEngine\'s accuracy by implementing rigorous validation processes, leveraging expert guidance, and integrating cutting-edge economic modelling techniques. These enhancements will ensure that our platform delivers precise, reliable insights to inform evidence-based policy decisions.
+
+Finally, we will prioritise accessibility, bringing tax-benefit modelling to a wider audience through user-centric interface enhancements, AI-assisted analysis, and targeted community engagement. By offering trainings, workshops, and symposia, we aim to empower diverse stakeholders, from policy experts to advocates and journalists, to harness PolicyEngine\'s capabilities effectively.
+
+In the following sections, we will delve into the specifics of our proposed enhancements across the dimensions of comprehensiveness, accuracy, and accessibility. For each dimension, we will introduce our current methodology and then provide technical details on the planned improvements. Through these step-change advancements, PolicyEngine seeks to revolutionise public policy analysis, fostering informed debate and driving evidence-based decision-making.
+
+**COMPREHENSIVENESS**
+
+The PolicyEngine UK microsimulation model may already be the most comprehensive in the UK. Like other models, our rules engine calculates core taxes and benefits, including Income Tax, National Insurance, Universal Credit, Child Benefit, and legacy benefits including Housing Benefit and the Tax Credits, and is based chiefly on the Family Resources Survey. We further integrate other critical data, including the Survey of Personal Incomes (for more accurate income), the Wealth and Assets Survey (for assets and liabilities), the Living Costs and Food Survey (for expenditures), and the Effects of Taxes and Benefits dataset (for VAT-liable spending) using custom-built machine learning tools. These additional data support analysis of VAT, capital gains, and stamp duty land tax, as well as possible new reforms such as a carbon tax and land value tax.
+
+With this support of this grant, we would further augment this comprehensiveness by adding childcare subsidies and public services to the model, and disaggregating all policy analysis by local area.
+
+**Adding childcare and public services to rules engine**
+
+The PolicyEngine platform easily incorporates additional program areas. Priority programs include childcare subsidies and public services, because of both the size of their respective budgets and their prominence in public debate. No public microsimulation model currently includes these programs.
+
+PolicyEngine would report on these new capacities, explain the design and validation and provide tutorials, quickly produce analysis of proposed reforms, and support advocates in communicating impact.
+
+Childcare subsidies total £6bn annually. PolicyEngine already models the cash subsidies, [comprising 20% of government spending on childcare](https://ifs.org.uk/articles/complicated-costly-and-constantly-changing-childcare-system-england). Two other subsidies are administered through the tax system and guaranteed free entitlements. The tax-based subsidy also [[has one of the largest \'cliff-edges\' in the tax-benefit system](https://www.telegraph.co.uk/business/2023/03/16/childcare-tax-trap-means-parents-better-34000-pay-cut/) (Lawford, 2023)]{.underline}: pairing our existing labour supply response module with its implementation would enable researchers to estimate the second-order effects of this widely-reported feature.
+
+We will implement the logic for this program from legislation, government resources and external analyses of the program. We will then validate household examples using these resources, and also validate microsimulation results (e.g., total cost) using external estimates, government publications, and Treasury costings of reforms.
+
+Public services account for two-thirds of public spending. The [Effects of Taxes and Benefits dataset](https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/bulletins/theeffectsoftaxesandbenefitsonhouseholdincome/financialyearending2021) maintained by the ONS imputes the incidence of public services such as healthcare and education. By using PolicyEngine\'s [[survey-enhance]{.underline}](https://github.com/PolicyEngine/survey-enhance) machine learning software, we can extend these properties to the Family Resources Survey (FRS) and approximate large spending changes to public budgets at the household level. With the FRS data, we can also distinguish public sector workers from private sector workers and model the impacts of nationwide flat pay increases relevant to national policymaking.
+
+We will compare these imputations to Treasury and external costings of recent reforms or budgetary allocations, as well as distributional analyses. PolicyEngine will also publish the imputation data and models in line with our open-source practice, enabling any user of the FRS or any microsimulation model to adopt this new capability.
+
+**Local-level impacts**
+
+PolicyEngine\'s data science techniques allow recalibration of national surveys to approximate local areas. For example, by reweighting the FRS to fit hundreds of local statistics, PolicyEngine can fine tune survey weights for localities and validate accuracy by comparisons to statistics not used in the calibration process.
+
+This approach can be thought of as the 'MRP poll' of tax-benefit analysis. Multi-level regression and post-stratification (MRP) polls [[made waves]{.underline}](https://www.newscientist.com/article/2134144-how-yougovs-experimental-poll-correctly-called-the-uk-election/) when adopted by major polling firms in 2017 as a method for producing more accurate election predictions, where YouGov correctly predicted outcomes for 93% of seats (Revell, 2017). Where traditional polling estimates only a vote swing effect from a nationally representative sample, MRP polling used optimisation techniques to exploit the properties of the individuals in that sample with local statistics of constituencies to predict results for each seat based on its demographic and financial contexts.
+
+Steps to recalibrate the Family Resources Survey to fit a given geographical area profile include:
+
+1.  Collect a set of both demographic and financial statistics, and organise them into a single dataset.
+
+2.  Quantify the aggregate deviations between the FRS, given a set of household weights, and those administrative statistics, as a single number. This "loss function" would give equal importance to demographic and financial statistics in total, and within those categories assign importance based on the aggregate, reserving 10% of targets for quality assurance.
+
+3.  Minimise the resulting loss function using the gradient descent optimisation algorithm, until we produce a set of household weights with stable enough convergence on a minimised loss value.
+
+4.  Use the excluded targets to assess whether the trained weights perform better or worse on unseen data. If worse, use approaches such as stopping training earlier or adding more statistical targets to improve generalisation. We would release these weights publicly, such that any UK tax-benefit microsimulation model could use them, including UKMOD, the IPPR model, TAXBEN, and other public-, private- and third-sector models.
+
+This step-change would empower policymakers to improve their decision-making. PolicyEngine would produce a free, publicly accessible dashboard enabling anyone to see how their local poverty rate compares to the UK and the distributional impacts of the most recent Budget reforms. Local councillors and parties to see the impact of national reforms on their constituents, their voices would be bolstered by empirical support. Disaggregated data would allow MPs to understand their district\'s labour force statistics, demographics, and benefit receipt and assess the local impact of national policy change. Multiple Members of Parliament have already expressed interest in this level of functionality.
+
+**ACCURACY**
+
+PolicyEngine has prioritised accuracy in each part of our model, from test-driven development in our rules engine to machine learning microdata enhancement to third-party model comparisons. Using the French government-built OpenFisca framework for modern microsimulation modelling, we apply *test-driven development,* a paradigm in which developers write tests in advance of the executable code, then verify the code passes the tests.
+
+These innovations for integrating and reweighting data set a new standard in modelling by integrating four microdata sources into one comprehensive dataset spanning demographics, benefits, income, wealth, and consumption. In doing so, PolicyEngine also [[reduces deviations from administrative totals by 90%]{.underline}](https://policyengine-uk-validation.streamlit.app/) compared to the original government survey data whilst providing the fastest and most accessible modelling interface across a wider range of policy levers than existing UK microsimulation models. For additional detail, see our [[paper]{.underline}](https://github.com/PolicyEngine/survey-enhance/blob/main/docs/paper/project_paper.pdf), currently undergoing peer review in the *International Journal of Microsimulation* (Woodruff & Ghenis, 2024).
+
+**Cross-model validation expansion**
+
+Finally, our comparisons to other models provide extra confidence in our logic. Currently, we validate population estimates against UKMOD, the only other open-access tax-benefit microsimulator. We will increase this level of validation, already the most transparent in the country, by consolidating our engagement with UK microsimulation expertise. We will also develop the first public validation exercise of more than two microsimulation models by building the first dashboard to compare model outputs on a large, synthetic dataset. We would expand our model validation to ScottishTaxBenefitModel as well as offering to integrate any closed-source model such as the IPPR model, TAXBEN, and government models.
+
+**ACCESSIBILITY**
+
+PolicyEngine is committed to expanding its reach and functionality to serve a broader range of users, from experts in academia, politics, and think-tanks to advocates, journalists, and legislators who may be less familiar with microsimulation. To achieve this goal, we will implement a series of initiatives that span the spectrum from human-driven engagement to cutting-edge technical advancements. These initiatives are designed to enhance usability, build confidence, and ensure accurate and responsible use of our platform across diverse user groups.
+
+Our approach recognizes that different user segments have varying levels of expertise and unique needs when it comes to engaging with microsimulation tools. As such, we will tailor our efforts to provide the most effective support and resources for each group:
+
+• Experts in academia, think tanks, and government: These users often require assistance in developing complex policy reforms and running advanced microsimulations. We will offer consulting services and collaborate closely with these experts to ensure they can leverage the full potential of PolicyEngine\'s capabilities.
+
+• Advocates and issue area experts: For these users, we will provide training and support to help them effectively utilise PolicyEngine to strengthen their policy reform proposals with data-driven insights. By empowering advocates with accessible microsimulation tools, we aim to amplify the voices of underrepresented communities and drive evidence-based policy change.
+
+• Journalists and media professionals: PolicyEngine will work closely with journalists to facilitate timely, accurate reporting on policy proposals. Through training, consulting, and specialised support, we will help media professionals harness PolicyEngine\'s capabilities to inform public debate and hold policymakers accountable.
+
+• Legislators and their staff: Building on our successful collaborations with political parties and legislators, we will extend our training and support to legislative staff in the UK. By equipping policymakers with user-friendly microsimulation tools, we aim to promote evidence-based decision-making at the highest levels of government.
+
+To serve these diverse user groups effectively, we have developed a multi-faceted strategy that encompasses four key projects:
+
+1\. Beta Testing for Quality Assurance: We will implement a rigorous beta testing process, engaging a diverse group of users to provide feedback on new features and ensure the accuracy, usability, and accessibility of PolicyEngine\'s platform.
+
+2\. Comprehensive Model Documentation: To promote transparency and facilitate expert review, we will create comprehensive documentation detailing PolicyEngine\'s methodology, assumptions, and validation processes.
+
+3\. User-Centric Interface Enhancements and AI Integration: Our redesigned interface will incorporate inline support, such as tooltips and documentation links; data visualisations to help users understand how policies interact; and careful integration of AI interfaces, providing a more intuitive and accessible user experience for both novice and advanced users.
+
+4\. Growing the User Community: We will implement a range of engagement initiatives, including training sessions, workshops, and community forums, to foster a vibrant ecosystem of PolicyEngine users and promote knowledge sharing across diverse sectors.
+
+By combining targeted human support with innovative technical advancements, PolicyEngine aims to break down barriers to microsimulation accessibility and empower a wide range of stakeholders to engage in evidence-based policy analysis. The following sections will delve into the details of each project, highlighting how they contribute to our mission of democratising access to cutting-edge microsimulation tools.
+
+**Beta testing for quality assurance**
+
+As PolicyEngine expands its user base and introduces new features, ensuring the accuracy, reliability, and usability of our platform is of utmost importance. To achieve this, we will implement a comprehensive beta testing process that engages a diverse group of users in the development and refinement of PolicyEngine\'s tools.
+
+Central to this effort is the launch of our new user login system, which will enable seamless communication and collaboration with our growing user community. Through this system, we will be able to segment our user base and gather targeted feedback from each group, ensuring that PolicyEngine meets the specific needs of experts, advocates, journalists, and policymakers alike.
+
+The beta testing process will involve the following key steps:
+
+1\. Recruitment: We will assemble a representative panel of beta testers, including policy professionals, modelling experts, and non-technical users. This diverse group will provide invaluable insights into the real-world usability and accessibility of PolicyEngine\'s features.
+
+2\. Feedback Collection: During the beta testing phase, we will actively solicit feedback from our testers through surveys, interviews, and user experience studies. This feedback will cover a range of aspects, from the intuitiveness of the user interface to the accuracy and relevance of PolicyEngine\'s outputs.
+
+3\. Iterative Refinement: Based on the feedback received, our development team will work closely with the beta testers to identify areas for improvement and implement necessary changes. We will prioritise updates that enhance usability, clarity, and reliability, ensuring that PolicyEngine remains a trusted and accessible tool for policy analysis.
+
+4\. Transparency and Collaboration: Throughout the beta testing process, we will maintain open lines of communication with our advisory board and funding partners. We will share regular updates on user feedback, proposed changes, and development progress, fostering a collaborative environment that leverages the collective expertise of our stakeholders.
+
+Our advisory board, consisting of renowned experts in microsimulation, economics, and data science, will play a crucial role in guiding the beta testing process. The board will convene quarterly to review user feedback, assess the effectiveness of our refinements, and provide strategic guidance on PolicyEngine\'s development roadmap. By engaging closely with our advisory board, we will ensure that PolicyEngine remains at the forefront of microsimulation best practices and continues to deliver value to our diverse user community.
+
+As PolicyEngine\'s user base grows, we will also establish dedicated subcommittees within our advisory board to focus on specific aspects of the platform\'s development. In particular, we will form a user experience subcommittee that will meet regularly to review feedback from beta testers and guide the ongoing evolution of PolicyEngine\'s interface and functionality. This targeted approach will ensure that user needs remain at the heart of our development process and that PolicyEngine continues to set new standards for accessibility and usability in the microsimulation field.
+
+By implementing a rigorous beta testing process, leveraging the expertise of our advisory board, and maintaining a user-centric approach to development, PolicyEngine will build trust and confidence among our growing user community. This commitment to quality assurance will be critical as we expand our platform\'s capabilities and empower more individuals and organisations to engage in evidence-based policy analysis.
+
+**Comprehensive Model Documentation**
+
+PolicyEngine is committed to providing users with comprehensive, transparent, and easily accessible documentation for our UK microsimulation model. We believe that clear and detailed documentation is essential for ensuring the accuracy, reliability, and proper use of our model by researchers, policymakers, and the general public.
+
+As part of this project, we will develop an interactive online documentation system that covers all aspects of our model, including the scope of simulated policies, the underlying rules and assumptions, the construction and calibration of input data, the modelling of behavioural responses, and the definition and interpretation of model outcomes.
+
+The documentation will be organised into several key sections, following the structure of the UKMOD Country Report:
+
+1\. Introduction: This section will provide an overview of PolicyEngine\'s UK model, its main features and capabilities, and the purpose and structure of the documentation.
+
+2\. Tax-Benefit System: We will describe the UK tax-benefit system, the main taxes and benefits covered by our model, and recent policy changes and reforms.
+
+3\. Simulation of Taxes and Benefits: This section will detail the scope of our simulations, the order in which policies are simulated, and the interdependencies between different components. We will provide a comprehensive description of each simulated policy, including eligibility conditions, benefit amounts, tax rates, calculations, and interactions with other policies. We will also explain the available policy extensions and switches and how they can be used to analyse alternative policy scenarios.
+
+4\. Data: We will document the input data sources used in our model, including their origin, sampling, weighting, and any adjustments made for non-response or missing values. We will explain the imputation methods and assumptions used for non-simulated components and the updating and uprating factors applied to align the data with the simulation period. Additionally, we will describe how we enhance the input data by incorporating information from multiple sources and using advanced statistical techniques, such as machine learning-based calibration and nowcasting.
+
+5\. Validation: To ensure the accuracy and reliability of our model, we will conduct extensive validation exercises and document the results in this section. We will compare our simulated outcomes with administrative data and external benchmarks, both at the aggregate level and for specific income components and subgroups. We will discuss any discrepancies and their potential reasons, as well as our plans for continuous improvement and refinement of the model.
+
+6\. Defining Model Outcomes: PolicyEngine will provide clear definitions and explanations of the various income concepts and variables used in our model, ensuring consistency with external data sources and international standards. We will also document the inequality and poverty measures available in our web application, including their calculations, adjustments, and decompositions by subgroups.
+
+7\. Behavioural Modelling: Our documentation will cover the methodology and assumptions underlying our modelling of behavioural responses, such as labour supply elasticities. We will explain how these responses are estimated, calibrated, and incorporated into the simulation process, as well as their effects on policy outcomes and the potential limitations and extensions of our approach.
+
+8\. Web Application: We will provide a user guide for our web application, explaining its structure, features, and navigation. We will offer guidance on how to interpret and use the model results, including any limitations, caveats, and best practices.
+
+The online documentation will be designed to be interactive and user-friendly, with features such as expandable sections, tooltips, and dynamic visualisations to enhance understanding and engagement. We will also include cross-references, hyperlinks, and a search function to facilitate navigation and access to relevant information.
+
+To ensure the documentation remains up-to-date and accurate, we will establish a regular review and updating process, incorporating user feedback and reflecting any changes or improvements made to the model over time. We will also provide contact information and support resources for users who require further assistance or have specific inquiries.
+
+By developing comprehensive, transparent, and accessible documentation, PolicyEngine aims to empower users to make informed decisions based on reliable and well-understood microsimulation results, ultimately contributing to evidence-based policymaking and public discourse on tax-benefit policies in the UK.
+
+**User-Centric Interface Enhancements and AI Integration**
+
+Since launching PolicyEngine in 2021, we have been dedicated to continuously improving our platform based on user feedback. Following a significant update to the interface in early 2023, we have identified further opportunities to enhance user accessibility and confidence through a comprehensive redesign of user flows and targeted technical advancements.
+
+Our approach to this redesign will be grounded in careful research and user-centric design principles. We will conduct a thorough UX research study to better understand the needs, policy questions, and technical capacities of current and prospective microsimulation users. Through design sprints and iterative prototyping, we will ensure that our development process remains centred on our users\' needs at every stage.
+
+While developing full mock-ups can be resource-intensive, we have collaborated with a volunteer designer to create early-stage concepts for simplified interfaces that address user feedback, such as more clearly separated inputs and outputs. These initial designs, available at https://bit.ly/47E5nKW, will serve as a foundation for further refinement and development.
+
+Alongside the UX study, we will implement industry best practices for common web interface components, such as tooltips, inline documentation, and in-app tutorials. These enhancements will improve the overall user experience by providing context-specific guidance and support, making the platform more accessible to users with varying levels of expertise. We will list programs affected by policy parameters as users adjust them, and explore other avenues to clarify the complex inter-relationships between tax and benefit program rules. We will also develop additional written content, such as explanations of poverty definitions and other model documentation sections described in that section, to further clarify key concepts and methodologies.
+
+While our primary focus will be on optimising the existing point-and-click interface, we also recognize the growing potential of AI-assisted analysis in the field of policy research. Building upon our pioneering work in integrating machine learning and large language models (LLMs) into policy analysis software, we will introduce a new conversational interface that leverages the power of AI to make PolicyEngine even more intuitive and accessible.
+
+This AI-enabled interface will allow users to ask questions in natural language, such as \"How much would doubling Child Benefit cut poverty?\" or \"I am a single parent of a 5-year-old child with £20,000 income; how much Universal Credit can I receive?\". By combining semantic search powered by open-source LLMs with GPT-4 API calls, we will create a powerful tool that can interpret user queries, extract relevant policy parameters, and provide accurate, context-specific answers.
+
+We recognize the sensitivity of using black-box models for critical policy questions and will approach the development of this feature with the utmost care to minimise the risk of harm-causing interfaces. The conversational interface will be flagged as experimental during testing, and we will integrate learnings from these prototypes alongside insights from our broader UX research to identify the optimal user interface that maximises accessibility for all users.
+
+In addition to the conversational interface, we will explore other ways to leverage AI and machine learning to enhance the user experience. This may include:
+
+1.  Intelligent recommendations for policy reforms based on user preferences and goals
+
+2.  Automated detection of potential unintended consequences or policy interactions
+
+3.  Personalised guidance and support based on user behaviour and expertise level
+
+By combining user feedback, industry best practices, and cutting-edge AI technologies, these technical innovations will better serve our current users and open up policy analysis to new cohorts of individuals who may have been previously excluded due to high barriers to entry. LLMs and other AI tools represent a significant opportunity to accelerate the learning curve for both new and advanced users by automating the conversion between machine inputs and natural language, enabling interfaces to cope with flexible human inputs.
+
+Ultimately, our goal is to democratise access to powerful policy analysis tools and empower a broader range of stakeholders to engage in evidence-based decision-making. Through a combination of user-centric design, inline support, data visualisations, and carefully integrated AI interfaces, we aim to create a more intuitive, accessible, and impactful platform for understanding the complex landscape of tax and benefit policies in the UK.
+
+**Expanding and Empowering the PolicyEngine User Community**
+
+To ensure that the improvements to the PolicyEngine platform are widely adopted and effectively used, we will implement a multi-faceted strategy to expand our reach and engage users at various levels of expertise. Our approach will involve a combination of targeted training sessions, individualised support, community-building initiatives, and strategic partnerships.
+
+We will focus on engaging and empowering four key user groups, each with unique needs and potential for impact:
+
+1\. Policy experts and researchers: Economists, academics, and think tank analysts who require advanced features and customization options.
+
+2\. Advocates and issue area experts: Professionals working in non-profit organisations, advocacy groups, and trade associations who need accessible tools to support their policy proposals.
+
+3\. Journalists and media professionals: Reporters, editors, and commentators who seek timely and accurate analysis of policy reforms to inform public debate. Given the growing capacity for data journalism in major UK outlets and their baseline technical and data skills, data journalists represent a key target audience. Through training, consulting, and specialised support, we will help media professionals harness PolicyEngine\'s capabilities to inform public debate and hold policymakers accountable.
+
+4\. Policymakers and government officials: Elected representatives, legislative staff, and civil servants who rely on evidence-based insights to design and evaluate policies.
+
+To cater to these diverse user groups, we will offer a range of engagement opportunities:
+
+\- Monthly virtual training sessions: We will host eight training sessions over the course of the grant period, each tailored to specific user profiles and capped at 20 participants to ensure a focused and interactive learning experience. These sessions will cover the latest developments in the PolicyEngine platform, including model enhancements, interface updates, and novel use cases.
+
+\- In-person training sessions: As needed, we will organise in-person workshops and seminars to provide hands-on guidance and facilitate deeper engagement with the platform.
+
+\- Weekly office hours and community forums: To provide ongoing support and foster a sense of community among our users, we will offer weekly office hours and maintain active community forums where users can ask questions, share insights, and collaborate on projects.
+
+\- Individualised support: For users who have completed our training sessions, we will offer one-on-one support to ensure they can fully leverage the platform\'s capabilities and apply them to their specific needs.
+
+\- Affordable consulting services: Recognizing that some organisations may have limited capacity to fully utilise PolicyEngine, we will offer affordable consulting services to help them integrate our tools into their workflows and achieve their policy analysis goals.
+
+\- Journalist support: To promote accurate and timely reporting on policy issues, we will provide specialised support to journalists, helping them critically analyse new proposals and their potential impacts. This will foster greater accountability among policymakers and contribute to a more informed public debate.
+
+\- Conference participation and user symposium: To showcase PolicyEngine\'s innovative approaches and facilitate knowledge exchange, we will actively participate in economics conferences and organise our first annual user symposium. These events will serve to connect users, highlight best practices, and strengthen the UK policy analysis community around our shared evidence-generating infrastructure.
+
+Expanding PolicyEngine\'s user base presents both challenges and opportunities. As we engage with a broader range of users, we must ensure that the platform remains accessible, reliable, and responsive to their diverse needs. This will require continuous refinement of our user interface, documentation, and support resources. We must also be mindful of the potential for misuse or misinterpretation of our tools, particularly among less experienced users.
+
+To mitigate these risks, we will work closely with our advisory board and user community to identify emerging issues and develop appropriate safeguards. We will establish clear guidelines for responsible use of the platform, incorporate user feedback into our design process, and provide comprehensive resources to help users interpret and communicate their findings accurately.
+
+Through our consultation process, we will engage with key stakeholders across academia, government, media, and civil society to gather insights on the evolving needs and challenges facing the policy analysis community. These consultations will inform our product roadmap, training curricula, and user support strategies, ensuring that PolicyEngine remains a cutting-edge and trusted resource for evidence-based policymaking.
+
+By combining targeted engagement strategies, comprehensive user support, and proactive risk mitigation, we aim to build a vibrant and empowered user community around PolicyEngine. This community will not only benefit from the platform\'s capabilities but also contribute to its ongoing development and help shape the future of policy analysis in the UK.
+
+# **ROUTE TO IMPACT**
+
+*What are the main outcomes you expect your project to deliver for society? These could include changes to policy or practice, shifts in debate, or capacity building. We understand that achieving impact may take time and depend on a range factors. Set out a realistic plan for how these changes may occur, including: (741/700 words):*
+
+*Who your stakeholders / audiences are and how you intend to engage them throughout the project?*
+
+*What the key project outputs would be? These should include at least one report which is freely and publicly available and will typically also include one or more academic outputs. *
+
+*What dissemination and engagement activities you would undertake to support these outcomes?*
+
+*How you would measure the success of the project in achieving its aims, objectives and intended outcomes?*
+
+Like the Nuffield Foundation, PolicyEngine is committed to unleashing the power of evidence to drive better policy and changes lives. Our contribution to that process---a free, accurate, user-friendly tool built on an open-source framework---has already demonstrated its potential. Think tanks, political parties, and even the government are embracing it. For example, The Centre for Policy Studies has used PolicyEngine to model its tax reform proposals (Clougherty & Jayawardena, 2023), while the Green Party has used it to analyse its manifesto.
+
+Organisations with no in-house microsimulation capacity now can ground proposals in data and evidence. Ronnie Cowan MP used the tool in real-time as PolicyEngine co-founders demonstrated it at a cross-party Parliamentary group for universal basic income policy. The Centre Think Tank independently deployed PolicyEngine to enrich several reports including *[[Closing Loopholes]{.underline}](https://centrethinktank.co.uk/2023/02/closing-loopholes/)* with more robust analysis (Wilkins, 2023). Founder and Director Torrin Wilkins summed up his organisation's experience this way: "PolicyEngine is an incredible tool for think tanks, policy makers and anyone who wants to understand the impact of policy decisions. It has ... allowed us to propose new policies with ease whilst clearly breaking down the impacts on different groups. For us it has been a game changer."
+
+Even organisations with in-house tools are now using PolicyEngine. The National Institute for Economic and Social Research, home of LINDA, a dynamic microsimulator, deployed PolicyEngine for its analysis of the Autumn Statement tax-benefit reforms (NIESR, 2023). With little training, economist Max Mosely was able to extract distributional impacts for a complex benefit uprating reform independently from PolicyEngine staff, and NIESR published these in their own branding in their report. HM Treasury is also investigating using PolicyEngine's enhanced data to expand its microsimulation capacity, and has replicated distributional analyses of public spending programs by income decile successfully.
+
+PolicyEngine puts all its cards on the table: the foundations of every model estimate are fully documented on our website. Anyone can interrogate the coding. The open-source technology makes public our rules engine and assumptions ensures that the debate stays focused on the policies, not the underlying models or data. And our new online validation tracker continually updates how well PolicyEngine matches validation data---a level of transparency that outstrips any other UK microsimulator. Indeed, we welcome input from users across the board as we strive to expand its unprecedented transparency, and opportunities to improve transparency further, such as visualisations of how programs interact as we propose here.
+
+PolicyEngine can expand beyond these elite conversations and drive greater impact and change. By making the user interface easier to use, advocates and organisers, those closest to the people social policies are meant to benefit, especially the disadvantaged, can transform their insights into rigorous policy proposals\--including cost estimates and distributional impacts. Our engagement activities supporting the media will enable them to be able to apply these tools in real-time to assess new proposals by gender, age, income, and wealth and share these findings in interactive data visualisations, helping to quickly challenge messaging campaigns unsupported by data. And PolicyEngine is already experimenting with AI to enable ordinary citizens to use PolicyEngine to calculate their own taxes and benefits and assess the impact of proposed reforms on their household budgets.
+
+Success in achieving these goals is concretely measurable. We track analytics around the number of engagements of the tool, both directly and through social media. High-profile, media-covered uses of the model, like we have seen by NIESR or the Centre for Policy Studies, already inform us the project's value to the public and we will continue to assess the value of our contributions by this metric.
+
+As our organisation serves primarily to provide the public good of a freely available software platform for public policy analysis, we expect to rely partly on philanthropy for ongoing support. However, we have initiated several other paths to sustainability, notably consulting on specific research projects as we have successfully pursued with the CPS, the UBI Lab Northern Ireland, King's College London (Holmes, 2023), and University of Warwick. As further engagements progress with NGOs and government, we expect more opportunities for paid consulting to dive into specific projects, or to provide in-depth training. Our UX study may also uncover demand for paid additional features to the web app compatible with our commitment to free public availability, such as the ability for organisations to privately collaborate on policy development.
+
+Growing PolicyEngine\'s capacity and accessibility will connect the dots between household, administrative district and national data, expand and sharpen policy debates and, in turn, provide the foundation necessary for the UK to align its values and policies.
+
+# **STAFFING**
+
+*Please set out clearly the proposed role and responsibilities of each key contributor to the project, including the proportion of their FTE (full-time equivalent) time that would be spent on the project in each relevant phase.  *
+
+*Please include this information for all staff/contributors who would be key to the delivery of the project, even those for whom you are not seeking funding.  *
+
+*You must state whether new staff would need to be recruited, and if so at what level and in what role, and also whether you intend to use any subcontracted staff/organisations and/or consultants. *
+
+*Please set out here the proposed arrangements for project management and supervision. *
+
+*Please describe the PI's experience of leading a team in delivering a project of this scale. *
+
+1.  **Max Ghenis \[PI\]** is the co-founder and CEO of PolicyEngine, where he has led the operation of the organisation since its inception in 2021. Max was previously the founder and president of the UBI Center, a think tank, and a data scientist at Google. He holds a B.A. in Operations Research from UC Berkeley and a M.S. in Development Economics from MIT.\
+    FTE: 40% supervising all projects.
+
+2.  **Nikhil Woodruff** is the co-founder and CTO of PolicyEngine, where he also leads UK operations. Nikhil was previously the UK Research Director of the UBI Center and a data scientist at Caspian, a fintech company. He holds a B.Sc. in Computer Science from Durham University.
+
+> FTE: 70% throughout focusing on technical development and supervision of contractor developers.
+
+3.  [**\[To be hired\]** will be a research associate at PolicyEngine with experience in UK economic policy modelling.\
+    FTE: 87% (full-time after a 1-2 month hiring process) developing the model and running trainings]{.mark}
+
+4.  **Anthony Volk** []{.mark}is a full-stack engineer at PolicyEngine (contractor). Previously, he conducted research into international infrastructure and digital development with the Institute for State Effectiveness. He holds bachelor's degrees in government and East Asian studies from Harvard University.\
+    FTE: 50% in UI development, including user model to facilitate beta testing.
+
+5.  **Pavel Makarchuk** []{.mark}is a Policy Modeling Manager at PolicyEngine (contractor), where he leads our US rules engine development community. He graduated with a Bachelor's degree in Economics from Marist College.\
+    FTE: 15% in program coverage development.
+
+6.  **Leigh Gibson** is a strategy consultant to PolicyEngine. Leigh was previously the vice president of social policy at the Niskanen Center and senior policy officer at the Robert Wood Johnson Foundation. Leigh received her A.B., M.A., and Ph.D. degrees at Princeton University and her M.S.W. at Hunter College School of Social Work, City University of New York.\
+    FTE: 10% focusing on report writing, outreach, and advisory board management.
+
+7.  **Howard Reed** is an economist with 25 years' research experience in empirical economics. Before leaving to found Landman Economics in May 2008, Howard's most recent job was Chief Economist at the Institute for Public Policy Research. \
+    FTE: 2% in public services modelling and validation.
+
+8.  **Graham Stark** is a Senior Research Fellow in Public Policy at Northumbria University. He is the creator of TAXBEN, the Institute for Fiscal Studies' tax and benefit microsimulation model, and spent 18 years as Senior Research Officer at the IFS.
+
+> FTE: 2% in local area modelling and validation.
+
+9.  **Don Boyd** is co-director of the State and Local Government Finance Project, Center for Policy Research, at the University of Albany in New York. Don holds a BA in Economics from SUNY Albany, an MBA at the College of Insurance, and a Ph.D. in Managerial Economics from Rensselaer Polytechnic Institute.\
+    FTE: 3% in local area modelling.
+
+*[The Foundation is keen that development of early career staff is a consideration on projects we fund. If they would be part of the team, please describe how]{.mark} **early** [career staff will be supported and developed by your team and wider organisation.**(206/250 words)**. ]{.mark}*
+
+[Nikhil, Pavel, and Anthony are each six years or less out of undergraduate studies. PolicyEngine has already empowered each to lead substantial parts of the organisation: Anthony leading our front-end interface and supervising several contributors; Pavel leading our US and Canada rules engine and supervising several dozen contributors; and Nikhil leading our overall technical and UK operations. Experienced leaders including Max and Leigh have guided each throughout in setting expectations for them and the team members they themselves oversee, while partnering on more advanced growth opportunities. For instance, Max is co-authoring an academic paper with Nikhil, and partnering with Pavel to build a mini-app for top US policy debates around the Child Tax Credit.]{.mark}
+
+[This project, by bringing in several exceptionally experienced consultants, would provide new opportunities for our early-career team members. Pavel would learn about tax-benefit policy in a third country, benefiting from Howard Reed and Graham Stark's expertise, and onboarding our new hire on rules engine development. Anthony would lead a redesign, including cutting-edge AI capabilities, with the input of our core team, consultants, advisory board, and users via UX research. Nikhil would lead our most ambitious microdata project yet, onboard our new hire on UK policy, and coordinate our broader team across projects.]{.mark}
+
+# **[EXPERT ADVICE AND OUTSIDE]{.mark} STAKEHOLDERS**
+
+*We would require you to establish an Advisory Group for your project, to provide support and constructive challenge. Please set out which individuals/organisations you would want represented and how you would engage with the Advisory Group. Most projects require additional forms of expert and stakeholder engagement to ensure the [quality]{.mark} of the research and help the research team achieve their intended outcomes and impacts. Please also set out the activities you would propose for these purposes throughout the project. (523/700 words)*
+
+PolicyEngine has established an advisory board to provide expert guidance, strategic support, and constructive challenge throughout the project. The advisory board consists of the following members:
+
+UK Advisory Board:
+
+Dr Arun Advani: Associate professor in the Economics Department at the University of Warwick, Research Fellow at the IFS, Visiting Fellow at the LSE International Inequalities Institute, and Research Associate of the CAGE Research Centre. Dr Advani studies issues of inequality, tax compliance, and tax design, with a focus on those with high incomes or wealth.
+
+Dr Christopher Holmes: Senior Lecturer in International Political Economy at King\'s College London. Dr Holmes\' research focuses on various aspects of political economy, and he recently used PolicyEngine in his capacity as project director for a deliberative democracy project on economic policy in the UK: The Citizens\' Economic Council on the Cost of Living.
+
+Max Mosley: Senior Economist in the Public Policy team at the National Institute of Economic and Social Research. Max\'s work focuses on simulating the effect of government policies, economic forces, and individual decisions on households. His cost-of-living analysis was recently featured on the front page of multiple major national newspapers.
+
+US Advisory Board:
+
+Tim Shaw: Policy Director at the Aspen Institute Financial Security Program and former Associate Director of Economic Policy at the Bipartisan Policy Center. Tim holds bachelor\'s degrees in Political Science and Spanish from Washington University in St. Louis, and a master\'s degree in Public Policy and Management from Carnegie Mellon University.
+
+Damola Ogundipe: Founder and CEO of Plural, a company that applies open source software to help organisations track public policy developments. Damola holds a bachelor\'s degree in Finance from the University of Minnesota.
+
+Jesse Horwitz: Co-founder of Agora and Hubble Contacts, two e-commerce companies, and former policy advisor to Andrew Yang\'s New York City mayoral campaign. Jesse holds a Bachelor\'s degree in Economics-Mathematics from Columbia University and attended Harvard Law School.
+
+The UK advisory board members will play a crucial role in shaping PolicyEngine\'s UK-specific features and enhancements. They will provide strategic guidance, offer expertise in their respective fields, review project progress, assist in identifying collaborators and outreach opportunities, and contribute to the dissemination of findings. The US advisory board members will offer insights on best practices and lessons learned from PolicyEngine\'s US implementation, and provide guidance on user experience, community engagement, and strategic partnerships.
+
+We propose quarterly reviews for each of the four workstreams with the UK advisory board, and quarterly meetings with the full international advisory board to review the project\'s progress and provide feedback on global aspects of PolicyEngine\'s development.
+
+In addition to the advisory board, PolicyEngine receives semi-annual reviews from the board of directors of the PSL Foundation, the fiscal sponsor for PolicyEngine US. The PSL Foundation board includes Jason DeBacker, Linda Gibbs (principal at Bloomberg Associates and former Deputy Mayor for Health and Human Services and Commissioner of the Department of Homeless Services in New York City), and Glenn Hubbard (Dean Emeritus and Professor of Finance and Economics at Columbia University, nonresident senior fellow at the American Enterprise Institute, and former Chairman of the Council of Economic Advisers and Deputy Assistant Treasury Secretary). The PSL Foundation board oversees the fiscal sponsorship of PolicyEngine US, provides high-level strategic guidance, offers insights and connections, and reviews the project\'s progress and alignment with PolicyEngine\'s global objectives.
+
+To ensure effective engagement with the advisory board and other stakeholders, we propose the following activities: regular email updates, invitations to project-related events, opportunities to contribute to project outputs, and collaboration on outreach and dissemination efforts. By leveraging the expertise and networks of our advisory board members, we aim to enhance the quality, impact, and reach of PolicyEngine\'s work in the UK and beyond.
+
+# **QUALITY ASSURANCE AND RISK MANAGEMENT**
+
+*Please state what approaches and mechanisms you would adopt to make sure that the design and analysis of the research, interpretation of the findings, and resulting outputs, met appropriate standards.  You should set out the quality control mechanisms that would be adopted within the team, where final sign-off would rest, and any external quality control arrangements you would put in place, e.g. Advisory G group, peer reviewed journals, peer review of other outputs.  Please also set out any limitations and/or risks to the project, together with any steps you propose to mitigate these. (322/350 words)*
+
+PolicyEngine's [[methodology and validation]{.underline}](https://1drv.ms/w/s!AqpDwQnkTiUyjsMlVzSGEnRy-xY1Mw) are built upon a foundation of transparency (PolicyEngine, 2024a). We implement a robust quality assurance and risk management strategy that adapts to the demands of each subproject, listed below. This strategy ensures that the research design, analysis, findings, and outputs adhere to high standards.
+
+1.  **Expert consultation:** We initiate each subproject with guidance from our advisory board and engagement from other stakeholders, leveraging the collective experience in tax-benefit modelling to inform our development strategy.
+
+2.  **Test-driven development:** We define the validity of our programs through test-driven development, an approach which has been found to substantially improve software quality (Nagappan 2008; George 2004). For example, before coding the logic for childcare subsidies, we establish tests based on external data, ensuring our model's outputs match these benchmarks.
+
+3.  **Collaborative code development and reviews:** Development is a team effort, with each subproject involving at least two developers. Senior team members review contributions to ensure they meet our quality standards, which include clear coding practices and maintainability. We conduct these reviews transparently, sharing them in real-time on GitHub.
+
+4.  **Continuous regression testing and maintenance:** The tests developed during the initial phases remain in the codebase, allowing for consistent quality checks with each version update. We also proactively solicit and incorporate user feedback to refine the tool\'s functionality.
+
+5.  **Comprehensive beta testing:** We will implement a robust beta testing process to gather feedback from a diverse group of users before launching major features. This process will leverage technical advances, such as:\
+    - A user login system that allows signed-in users to provide in-app feedback and report issues in real-time\
+    - The ability to limit access to beta features to specific user groups, enabling targeted testing and feedback collection\
+    - Structured feedback surveys and user interviews to gather insights on usability, accuracy, and potential improvements
+
+> Beta testers will be recruited from our target user groups, including policy experts, advocates, journalists, and policymakers. Their feedback will be carefully analysed and incorporated into the development process, with additional testing rounds conducted if significant issues are identified. Final sign-off on feature launches will rest with the project leadership team, taking into account beta tester feedback and advisory board recommendations.
+
+These are present in each subproject:
+
+- Local area reweighting: We visualise local aggregates on a dashboard, which undergoes expert review and iterative code refinement.
+
+- New programs: We outline clear validation cases for new programs, ensuring they pass through a rigorous review process.
+
+- UX and outreach: We conduct surveys to identify user knowledge gaps, which then inform our UI development.
+
+In addition to these measures, we will continue to seek external validation through peer-reviewed publications, conference presentations, and collaboration with other modelling teams. By providing clear documentation and user guidance, alongside mechanisms for real-time feedback and error correction, we aim to mitigate risks such as misinterpretation of data or misuse of the model. This proactive approach ensures that PolicyEngine\'s outputs remain transparent, accurate, and user-centric, fostering trust and confidence among our growing user community.
+
+# LEGAL AND ETHICAL ISSUES
+
+*All research we fund must be conducted in a legal and ethical manner and comply with the relevant legislation. Please include discussion of the legal and ethical issues raised by your project, including how these would be addressed. Also set out any ethical clearance procedures you would expect to go through. (164/700 Words)*
+
+Data protection is the strongest legal factor relevant to this project. The datasets that we use are licensed for our use as a non-profit. We also comply with GDPR and do not attempt to identify individual survey respondents.
+
+As part of our beta testing process, we will collect user feedback on the software platform. To ensure compliance with data protection regulations, we will implement the following measures:
+
+- User feedback will be collected anonymously, without any personally identifiable information, by default, unless users opt in.
+
+- Users will be informed about the purpose of collecting feedback and how it will be used to improve the platform.
+
+- Users will have the option to opt-out of providing feedback at any time.
+
+Feedback data will be securely stored and accessed only by authorised team members for analysis and platform improvement purposes.
+
+The UN has certified us as a digital public good, for which part of the criteria include legal and ethical issue consideration.
+
+The strongest ethical issue associated with this project is the risk of misuse by users, with the potential to mislead policymakers or the electorate. This risk can come from three sources: model error, user interface misinterpretation, or misinterpretation of user feedback. By retaining and enhancing PolicyEngine\'s test-driven development practices, validation against other models, and thorough beta testing process, we can minimise the model\'s deviation from reality in predicting policy reform impacts. By directly informing and listening to how users interact with the interface and carefully analysing user feedback, we can ensure the UI behaves as expected and address any potential sources of misinterpretation.
+
+# ARCHIVING
+
+*If your project would include primary quantitative or qualitative data collection, please set out whether you would plan to deposit the data at an appropriate archive to ensure its availability for future research. Please explain how this would be communicated to participants, how the data would be anonymised, what archive would be used and the timescale. Any costs related to preparing data for archiving should be included in your budget. (80/700 words)*
+
+We will send all the datasets we create back to the UK Data Service (the service that distributes the FRS/SPI/etc) so its users can find it there and use it outside the model.
+
+We will store all new datasets using the widely used platform GitHub\'s public release system, enabling users to find the data in the same place as the open-source model code.
+
+Regarding the user feedback collected during beta testing:
+
+- Anonymised feedback data will be securely stored on our servers for the duration of the project and for a reasonable period afterwards to allow for further analysis and platform improvements.
+
+- If any valuable insights or aggregate data from user feedback are deemed beneficial for future research, we will consider archiving them in an appropriate repository, ensuring that no personally identifiable information is included.
+
+- Users will be informed about the potential archiving of anonymised feedback data and given the opportunity to opt-out if desired.
+
+We do not collect primary data, but our results and user feedback are archived via software and microdata versioning, with appropriate measures in place to protect user privacy and comply with data protection regulations.
+
+# TIMETABLE
+
+*Please clearly summarise the timing and duration of key phases of the project, major activities and important interim dates (e.g. interim reports), as well as attaching a detailed table or Gantt chart below. Please note that all funded projects must result in a freely and publicly available report which must be published, along with any other substantive outputs, before the end of grant date. 201/700 Words plus Gantt chart*. []{.mark}
+
+The project will be carried out over a 12-month period, with key phases and activities as follows:
+
+Local disaggregation (August 2024 - January 2025): This phase includes local authority and parliamentary constituency calibration, beta testing, and the launch of an interactive local area-view report.
+
+Expanding program coverage (January - May 2025): This phase involves modelling, documentation, validation, beta testing, and reporting on childcare subsidies and public services.
+
+Expanding validation against other tax-benefit models (August - September 2024): We will build a validation dashboard to compare PolicyEngine with other models.
+
+Beta testing for quality assurance (October 2024 - January 2025): We will add features for signed-in users to provide feedback and opt-in to beta features.
+
+Documentation and validation (August 2024 - March 2025): This phase includes microdata construction, behavioural responses, taxes, and benefits documentation and validation.
+
+New user-centric AI-enabled web interface (January - July 2025): This phase includes a UX research study, new interface development, beta testing, and the launch of the new interface.
+
+Growing the user community (ongoing throughout the project): We will conduct monthly trainings and host an inaugural user symposium in June 2025.
+
+The subprojects will be completed in the following order: local disaggregation, validation expansion, expanding program coverage, and interface updates. Some activities will be carried out in parallel, as they require different staff members.
+
+Key deliverables include the interactive validation dashboard (September 2024), local area-view report (January 2025), childcare and public services modelling and reports (March - April 2025), and the new user-centric AI-enabled web interface (July 2025).
+
+All project outputs, including the publicly available reports, will be completed before the end of the grant period in July 2025.
+
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Project**                                               | **Deliverable**                                       | **M1**       | **M2**       | **M3**       | **M4**       | **M5**       | **M6**       | **M7**       | **M8**       | **M9**       | **M10**      | **M11**      | **M12**      |
+|                                                           |                                                       |              |              |              |              |              |              |              |              |              |              |              |              |
+|                                                           |                                                       | **Aug 2024** | **Sep 2024** | **Oct 2024** | **Nov 2024** | **Dec 2024** | **Jan 2025** | **Feb 2025** | **Mar 2025** | **Apr 2025** | **May 2025** | **Jun 2025** | **Jul 2025** |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Local disaggregation**                                  | Local authority calibration                           | x            | x            | x            |              |              |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Parliamentary constituency calibration                |              |              | x            | x            | x            |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Beta testing                                          |              |              |              | x            | x            |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Launch with interactive local area-view report        |              |              |              |              |              | x            |              |              |              |              |              |              |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Expanding program coverage**                            | Childcare subsidies modelling                         |              |              |              | x            | x            |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Childcare documentation, validation, and beta testing |              |              |              |              | x            | x            |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Childcare report                                      |              |              |              |              |              |              | x            |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Public services modelling                             |              |              |              | x            | x            | x            |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Public services documentation and validation          |              |              |              |              |              |              | x            |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Public services report                                |              |              |              |              |              |              |              | x            |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Beta update completion                                |              |              |              |              |              |              | x            | x            |              |              |              |              |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Expanding validation against other tax-benefit models** | Build validation dashboard                            | x            | x            |              |              |              |              |              |              |              |              |              |              |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Beta testing for quality assurance**                    | Add feature for signed-in users to provide feedback   |              |              | x            | x            |              |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Add opt-in for beta features                          |              |              |              |              |              |              |              |              | x            | x            |              |              |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Documentation and validation**                          | Microdata construction                                | x            | x            |              |              |              |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Behavioural responses                                 |              |              | x            | x            |              |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Taxes                                                 |              |              |              | x            | x            |              |              |              |              |              |              |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Benefits                                              |              |              |              |              |              | x            | x            |              |              |              |              |              |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **New user-centric AI-enabled web interface**             | UX research study                                     |              |              |              |              |              |              | x            | x            | x            | x            | x            | x            |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | New interface development                             |              |              |              |              |              |              |              | x            | x            | x            | x            | x            |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Beta update completion                                |              |              |              |              |              |              |              |              | x            | x            | x            |              |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | New interface launch                                  |              |              |              |              |              |              |              |              |              |              |              | x            |
++-----------------------------------------------------------+-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| **Growing the user community**                            | Trainings (combined)                                  | x            | x            | x            | x            | x            | x            | x            | x            | x            | x            | x            | x            |
+|                                                           +-------------------------------------------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                                                           | Inaugural user symposium                              |              |              |              |              |              |              |              |              |              |              |              | x            |
++===========================================================+=======================================================+==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+
+
+# REFERENCES
+
+*Please set out any references here. Please only include those cited in the application, ideally presented in author-date format (e.g. Harvard style). (Maximum 700 words)*
+
+Clougherty, T. and Jayawardena, R. (2023). Family Friendly Taxation. Retrieved from [[https://cps.org.uk/research/family-friendly-taxation/]{.underline}](https://cps.org.uk/research/family-friendly-taxation/)
+
+Clougherty, T., & Jayawardena, R. (2023). Family Friendly Taxation. Retrieved from [[https://cps.org.uk/research/family-friendly-taxation/]{.underline}](https://cps.org.uk/research/family-friendly-taxation/)
+
+Congressional Budget Office. (2012). Labor Supply Fiscal Policy. Retrieved from [[https://www.cbo.gov/sites/default/files/112th-congress-2011-2012/reports/43674-laborsupplyfiscalpolicy.pdf#page=4]{.underline}](https://www.cbo.gov/sites/default/files/112th-congress-2011-2012/reports/43674-laborsupplyfiscalpolicy.pdf#page=4)
+
+Digital Public Goods Alliance. (2024a). Digital Public Goods Registry. Retrieved from [[https://digitalpublicgoods.net/registry/]{.underline}](https://digitalpublicgoods.net/registry/)
+
+Digital Public Goods Alliance. (2024b). Digital Public Goods Standard. Retrieved from [[https://digitalpublicgoods.net/standard/]{.underline}](https://digitalpublicgoods.net/standard/)
+
+George, B., & Williams, L. (2004). An initial investigation of test driven development in industry. Retrieved from [[https://www.sciencedirect.com/science/article/abs/pii/S0950584903002040]{.underline}](https://www.sciencedirect.com/science/article/abs/pii/S0950584903002040)
+
+Holmes, S. (2023). Project Report. Retrieved from [[https://citizensecon.org.uk/project-report]{.underline}](https://citizensecon.org.uk/project-report)
+
+Lawford, J. (2023). Childcare tax trap means parents better off with £34,000 pay cut. Retrieved from [[https://www.telegraph.co.uk/business/2023/03/16/childcare-tax-trap-means-parents-better-34000-pay-cut/]{.underline}](https://www.telegraph.co.uk/business/2023/03/16/childcare-tax-trap-means-parents-better-34000-pay-cut/)
+
+Martin, P. (2023). Policy Modelling with Rules as Code (RAC). Retrieved from [[https://salsa.digital/insights/policy-modelling-with-rules-as-code-rac]{.underline}](https://salsa.digital/insights/policy-modelling-with-rules-as-code-rac)
+
+Nagappan, N. (2008). Searching for a Needle in a Haystack: Predicting Security Vulnerabilities for Windows Vista. Retrieved from [[https://www.infona.pl/resource/bwmeta1.element.springer-1c578df4-2234-31f8-aadc-773acdba2bf6]{.underline}](https://www.infona.pl/resource/bwmeta1.element.springer-1c578df4-2234-31f8-aadc-773acdba2bf6)
+
+National Institute of Economic and Social Research (NIESR). (2023). 2023 Autumn Statement Reaction. Retrieved from [[https://www.niesr.ac.uk/wp-content/uploads/2023/11/2023-Autumn-Statement-Reaction.pdf?ver=dRu6v3iiCYdTvILLdbmT]{.underline}](https://www.niesr.ac.uk/wp-content/uploads/2023/11/2023-Autumn-Statement-Reaction.pdf?ver=dRu6v3iiCYdTvILLdbmT)
+
+PolicyEngine. (2024a). PolicyEngine Methodology. Retrieved from [[https://1drv.ms/w/s!AqpDwQnkTiUyjsMlVzSGEnRy-xY1Mw]{.underline}](https://1drv.ms/w/s!AqpDwQnkTiUyjsMlVzSGEnRy-xY1Mw)
+
+PolicyEngine. (2024b). PolicyEngine UK Validation. Retrieved from [[https://policyengine-uk-validation.streamlit.app]{.underline}](https://policyengine-uk-validation.streamlit.app/)
+
+Revell, T. (2017). How YouGov\'s experimental poll correctly called the UK election. Retrieved from [[https://www.newscientist.com/article/2134144-how-yougovs-experimental-poll-correctly-called-the-uk-election/]{.underline}](https://www.newscientist.com/article/2134144-how-yougovs-experimental-poll-correctly-called-the-uk-election/)
+
+Wilkins, R. (2023). Closing Loopholes. Retrieved from [[https://centrethinktank.co.uk/2023/02/closing-loopholes/]{.underline}](https://centrethinktank.co.uk/2023/02/closing-loopholes/)
+
+Woodruff, N. (2022). The Green Party Manifesto at Policyfest. Retrieved from [[https://policyengine.org/uk/research/the-green-party-manifesto-at-policyfest]{.underline}](https://policyengine.org/uk/research/the-green-party-manifesto-at-policyfest)
+
+Woodruff, N., & Ghenis, M. (2024). UK Data Enhancement. Retrieved from [[https://policyengine.org/uk_data_enhancement.pdf]{.underline}](https://policyengine.org/uk_data_enhancement.pdf)
+
+Van de Ven and Popova, 2024. UKMOD country report 2021-2027. Retrieved from [[https://www.microsimulation.ac.uk/publications/publication-578181/]{.underline}](https://www.microsimulation.ac.uk/publications/publication-578181/)

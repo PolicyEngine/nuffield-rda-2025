@@ -1,0 +1,443 @@
+import { useState } from 'react'
+
+interface Component {
+  id: string
+  title: string
+  cost: number
+  effort: string | null
+  priority: 'high' | 'medium' | 'low' | 'exploratory'
+  description: string
+  costBreakdown?: { staff?: number; nonStaff?: number; details?: string }
+}
+
+function Portfolio() {
+  const [selectedComponents, setSelectedComponents] = useState<Set<string>>(new Set([
+    // High priority defaults
+    'council_tax', 'policy_buffer', 'ai_authoring', 'monthly_trainings',
+    'annual_symposium', 'poverty_dashboard'
+  ]))
+
+  const toggleComponent = (id: string) => {
+    const newSelected = new Set(selectedComponents)
+    if (newSelected.has(id)) {
+      newSelected.delete(id)
+    } else {
+      newSelected.add(id)
+    }
+    setSelectedComponents(newSelected)
+  }
+
+  const themes = [
+    {
+      id: 'model',
+      title: 'Model Enhancement',
+      icon: '🔬',
+      description: 'Expanding model coverage and improving precision',
+      components: [
+        {
+          id: 'council_tax',
+          title: 'Council Tax Modeling',
+          cost: 32000,
+          effort: '4 pm',
+          priority: 'high' as const,
+          description: 'Add local taxation to model with 368 local authority variations',
+          costBreakdown: { staff: 32000, nonStaff: 0, details: 'Research & development' }
+        },
+        {
+          id: 'vat_distribution',
+          title: 'VAT Distributional Analysis',
+          cost: 8000,
+          effort: '1 pm',
+          priority: 'medium' as const,
+          description: 'Household-level VAT burden by income decile',
+          costBreakdown: { staff: 8000, nonStaff: 0 }
+        },
+        {
+          id: 'monthly_lfs',
+          title: 'Monthly LFS Updates',
+          cost: 32000,
+          effort: '4 pm',
+          priority: 'medium' as const,
+          description: 'Real-time nowcasting from annual to monthly updates',
+          costBreakdown: { staff: 32000, nonStaff: 0 }
+        },
+        {
+          id: 'policy_buffer',
+          title: 'Policy Response Buffer',
+          cost: 40000,
+          effort: '5 pm',
+          priority: 'high' as const,
+          description: 'Rapid response to Budgets, manifestos, emerging policies',
+          costBreakdown: { staff: 40000, nonStaff: 0 }
+        },
+        {
+          id: 'olg_model',
+          title: 'OLG General Equilibrium',
+          cost: 100000,
+          effort: '6 pm + consultants',
+          priority: 'exploratory' as const,
+          description: 'Dynamic modeling for long-term fiscal sustainability',
+          costBreakdown: { staff: 48000, nonStaff: 52000, details: '£52k expert consultants' }
+        }
+      ]
+    },
+    {
+      id: 'app',
+      title: 'App Development',
+      icon: '💻',
+      description: 'User experience and accessibility improvements',
+      components: [
+        {
+          id: 'ai_authoring',
+          title: 'AI Report Authoring Tool',
+          cost: 48000,
+          effort: '6 pm',
+          priority: 'high' as const,
+          description: 'LLM-powered natural language policy analysis reports',
+          costBreakdown: { staff: 48000, nonStaff: 0 }
+        },
+        {
+          id: 'obr_integration',
+          title: 'OBR/HMT Data Integration',
+          cost: 24000,
+          effort: '3 pm',
+          priority: 'medium' as const,
+          description: 'Validation against official government costings',
+          costBreakdown: { staff: 24000, nonStaff: 0 }
+        },
+        {
+          id: 'notifications',
+          title: 'Notification System',
+          cost: 16000,
+          effort: '2 pm',
+          priority: 'medium' as const,
+          description: 'Alert users to relevant policy changes',
+          costBreakdown: { staff: 16000, nonStaff: 0 }
+        },
+        {
+          id: 'mobile_app',
+          title: 'Mobile App',
+          cost: 64000,
+          effort: '8 pm',
+          priority: 'exploratory' as const,
+          description: 'iOS/Android apps for household calculations',
+          costBreakdown: { staff: 64000, nonStaff: 0 }
+        }
+      ]
+    },
+    {
+      id: 'growth',
+      title: 'Growth & Engagement',
+      icon: '📈',
+      description: 'Expanding user base and measuring impact',
+      components: [
+        {
+          id: 'monthly_trainings',
+          title: 'Monthly Training Sessions',
+          cost: 32000,
+          effort: '4 pm',
+          priority: 'high' as const,
+          description: '24 training sessions over 2 years (continuation from previous grant)',
+          costBreakdown: { staff: 32000, nonStaff: 0 }
+        },
+        {
+          id: 'annual_symposium',
+          title: 'Annual User Symposium',
+          cost: 25000,
+          effort: '2 pm',
+          priority: 'high' as const,
+          description: '2 symposia with 50-100 participants each',
+          costBreakdown: { staff: 8000, nonStaff: 17000, details: '£12k venue + £5k travel' }
+        },
+        {
+          id: 'poverty_dashboard',
+          title: 'Poverty & Child Poverty Dashboard',
+          cost: 32000,
+          effort: '4 pm',
+          priority: 'high' as const,
+          description: 'Real-time poverty tracking with policy scenario comparisons',
+          costBreakdown: { staff: 32000, nonStaff: 0 }
+        },
+        {
+          id: 'conferences',
+          title: 'Conference Program',
+          cost: 30000,
+          effort: '3 pm',
+          priority: 'medium' as const,
+          description: '6-8 presentations at major economics conferences',
+          costBreakdown: { staff: 12000, nonStaff: 18000, details: '£3k travel per conference' }
+        },
+        {
+          id: 'crm',
+          title: 'CRM System',
+          cost: 16000,
+          effort: '2 pm',
+          priority: 'medium' as const,
+          description: 'User engagement tracking and analytics',
+          costBreakdown: { staff: 8000, nonStaff: 8000, details: '£4k/year licenses' }
+        },
+        {
+          id: 'hackathon',
+          title: 'Analysis Contest/Hackathon',
+          cost: 20000,
+          effort: '2 pm',
+          priority: 'medium' as const,
+          description: 'Annual competition to drive innovative uses',
+          costBreakdown: { staff: 8000, nonStaff: 12000, details: '£10k prizes + £2k venue' }
+        }
+      ]
+    }
+  ]
+
+  const allComponents = themes.flatMap(t => t.components)
+  const selectedTotal = allComponents
+    .filter(c => selectedComponents.has(c.id))
+    .reduce((sum, c) => sum + c.cost, 0)
+
+  const getPriorityColor = (priority: string) => {
+    switch (priority) {
+      case 'high': return '#2ecc71'
+      case 'medium': return '#3498db'
+      case 'low': return '#95a5a6'
+      case 'exploratory': return '#9b59b6'
+      default: return '#95a5a6'
+    }
+  }
+
+  const getPriorityBg = (priority: string) => {
+    switch (priority) {
+      case 'high': return '#f0fdf4'
+      case 'medium': return '#eff6ff'
+      case 'low': return '#f8f9fa'
+      case 'exploratory': return '#faf5ff'
+      default: return '#f8f9fa'
+    }
+  }
+
+  return (
+    <div className="content-section">
+      <h1>Project Components</h1>
+      <p style={{ color: '#7f8c8d', marginBottom: '1rem' }}>
+        Select components to build your £300k-£350k portfolio
+      </p>
+
+      {/* Selected budget total */}
+      <div style={{
+        background: selectedTotal >= 300000 && selectedTotal <= 350000 ? '#f0fdf4' : '#fff3cd',
+        border: `2px solid ${selectedTotal >= 300000 && selectedTotal <= 350000 ? '#2ecc71' : '#f59e0b'}`,
+        borderRadius: '8px',
+        padding: '1.5rem',
+        marginBottom: '2rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}>
+        <div>
+          <strong>Selected Components Total</strong>
+          <div style={{ fontSize: '0.9rem', color: '#7f8c8d', marginTop: '0.25rem' }}>
+            Target range: £300,000 - £350,000
+          </div>
+        </div>
+        <div style={{
+          fontSize: '2rem',
+          fontWeight: '700',
+          color: selectedTotal >= 300000 && selectedTotal <= 350000 ? '#2ecc71' : '#f59e0b'
+        }}>
+          £{selectedTotal.toLocaleString()}
+        </div>
+      </div>
+
+      {/* Component themes */}
+      {themes.map(theme => {
+        const themeTotal = theme.components
+          .filter(c => selectedComponents.has(c.id))
+          .reduce((sum, c) => sum + c.cost, 0)
+
+        return (
+          <div
+            key={theme.id}
+            style={{
+              background: 'white',
+              borderRadius: '8px',
+              padding: '1.5rem',
+              marginBottom: '2rem',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+            }}
+          >
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginBottom: '1rem',
+              paddingBottom: '1rem',
+              borderBottom: '2px solid #3498db'
+            }}>
+              <div>
+                <h2 style={{ margin: 0, color: '#2c3e50', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <span>{theme.icon}</span>
+                  {theme.title}
+                </h2>
+                <div style={{ fontSize: '0.9rem', color: '#7f8c8d', marginTop: '0.25rem' }}>
+                  {theme.description}
+                </div>
+              </div>
+              <div style={{
+                fontSize: '1.5rem',
+                fontWeight: '600',
+                color: themeTotal > 0 ? '#3498db' : '#ddd'
+              }}>
+                £{themeTotal.toLocaleString()}
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gap: '1rem' }}>
+              {theme.components.map(comp => {
+                const isSelected = selectedComponents.has(comp.id)
+
+                return (
+                  <div
+                    key={comp.id}
+                    onClick={() => toggleComponent(comp.id)}
+                    style={{
+                      background: isSelected ? getPriorityBg(comp.priority) : '#f8f9fa',
+                      border: `2px solid ${isSelected ? getPriorityColor(comp.priority) : '#ecf0f1'}`,
+                      padding: '1rem',
+                      borderRadius: '8px',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      opacity: comp.priority === 'exploratory' ? 0.7 : 1
+                    }}
+                  >
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'start',
+                      marginBottom: '0.5rem'
+                    }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.75rem',
+                        flex: 1
+                      }}>
+                        <div style={{
+                          width: '24px',
+                          height: '24px',
+                          borderRadius: '4px',
+                          border: `2px solid ${isSelected ? getPriorityColor(comp.priority) : '#ddd'}`,
+                          background: isSelected ? getPriorityColor(comp.priority) : 'white',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: 'white',
+                          fontWeight: '700',
+                          flexShrink: 0
+                        }}>
+                          {isSelected && '✓'}
+                        </div>
+                        <div style={{
+                          fontWeight: '600',
+                          color: '#2c3e50',
+                          fontSize: '1.05rem'
+                        }}>
+                          {comp.title}
+                        </div>
+                      </div>
+                      <div style={{
+                        fontSize: '1.1rem',
+                        fontWeight: '600',
+                        color: isSelected ? '#2c3e50' : '#bbb',
+                        fontFamily: 'monospace',
+                        marginLeft: '1rem',
+                        flexShrink: 0
+                      }}>
+                        £{comp.cost.toLocaleString()}
+                      </div>
+                    </div>
+
+                    <div style={{
+                      fontSize: '0.9rem',
+                      color: '#555',
+                      marginBottom: '0.75rem',
+                      lineHeight: '1.5'
+                    }}>
+                      {comp.description}
+                    </div>
+
+                    <div style={{
+                      display: 'flex',
+                      gap: '1rem',
+                      fontSize: '0.85rem',
+                      color: '#7f8c8d',
+                      flexWrap: 'wrap'
+                    }}>
+                      {comp.effort && <span>📊 {comp.effort}</span>}
+                      <span style={{
+                        padding: '2px 8px',
+                        borderRadius: '12px',
+                        fontSize: '0.75rem',
+                        fontWeight: '600',
+                        textTransform: 'uppercase',
+                        background: getPriorityColor(comp.priority),
+                        color: 'white'
+                      }}>
+                        {comp.priority}
+                      </span>
+                      {comp.costBreakdown && comp.costBreakdown.nonStaff && comp.costBreakdown.nonStaff > 0 && (
+                        <span>💰 £{comp.costBreakdown.staff?.toLocaleString()} staff + £{comp.costBreakdown.nonStaff?.toLocaleString()} non-staff</span>
+                      )}
+                      {comp.costBreakdown?.details && (
+                        <span>({comp.costBreakdown.details})</span>
+                      )}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )
+      })}
+
+      {/* Budget guidance */}
+      <div style={{
+        background: '#eff6ff',
+        borderLeft: '4px solid #3498db',
+        padding: '1.5rem',
+        borderRadius: '4px',
+        marginBottom: '2rem'
+      }}>
+        <h3 style={{ marginTop: 0 }}>Budget Guidance</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+          <div>
+            <div style={{ fontSize: '0.85rem', color: '#7f8c8d', marginBottom: '0.25rem' }}>Typical Award</div>
+            <div style={{ fontSize: '1.25rem', fontWeight: '600', color: '#2c3e50' }}>Under £300k</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '0.85rem', color: '#7f8c8d', marginBottom: '0.25rem' }}>Maximum</div>
+            <div style={{ fontSize: '1.25rem', fontWeight: '600', color: '#2c3e50' }}>£500k</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '0.85rem', color: '#7f8c8d', marginBottom: '0.25rem' }}>Exceptional</div>
+            <div style={{ fontSize: '1.25rem', fontWeight: '600', color: '#2c3e50' }}>£750k</div>
+          </div>
+          <div>
+            <div style={{ fontSize: '0.85rem', color: '#7f8c8d', marginBottom: '0.25rem' }}>Duration</div>
+            <div style={{ fontSize: '1.25rem', fontWeight: '600', color: '#2c3e50' }}>6-36 months</div>
+          </div>
+        </div>
+      </div>
+
+      <div style={{
+        background: '#f0fdf4',
+        borderLeft: '4px solid #2ecc71',
+        padding: '1rem',
+        borderRadius: '4px'
+      }}>
+        <strong>💡 Tip:</strong> Click components to select/deselect. Aim for £300k-£350k total.
+        High-priority items build directly on previous Nuffield-funded work.
+      </div>
+    </div>
+  )
+}
+
+export default Portfolio
