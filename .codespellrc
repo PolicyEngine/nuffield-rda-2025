@@ -1,0 +1,7 @@
+[codespell]
+skip = .git,node_modules,*.lock,package-lock.json,*.min.js
+ignore-words-list = ba,nd
+check-filenames =
+check-hidden =
+count =
+quiet-level = 2

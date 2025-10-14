@@ -2,7 +2,7 @@
 
 ## Application Information
 
-- **Organization**: PolicyEngine
+- **Organisation**: PolicyEngine
 - **Grant**: Nuffield Foundation Research, Development and Analysis Fund
 - **Requested Amount**: [TO BE DETERMINED: Up to £300,000 typical, max £500,000]
 - **Project Duration**: [TO BE DETERMINED: 6 months - 3 years]
@@ -36,11 +36,11 @@ Select one or more priority questions this research addresses:
 
 ## UK Institution Affiliation
 
-[TO BE COMPLETED: Confirm UK-based organizational affiliation as required]
+[TO BE COMPLETED: Confirm UK-based organisational affiliation as required]
 
 ## PolicyEngine Overview
 
-PolicyEngine is a nonprofit organization that builds open-source tools to analyze the impacts of public policy on society. Our microsimulation models help policymakers, researchers, and the public understand how tax and benefit policies affect households across income distributions.
+PolicyEngine is a nonprofit organisation that builds open-source tools to analyse the impacts of public policy on society. Our microsimulation models help policymakers, researchers, and the public understand how tax and benefit policies affect households across income distributions.
 
 ### Previous Nuffield Support
 
@@ -51,7 +51,7 @@ PolicyEngine received £251,296 from Nuffield Foundation (September 2024 - Septe
 Our work addresses multiple priority questions:
 - **Priority 1**: Tax and benefit policy analysis for prosperity and fairness
 - **Priority 2**: Accessible policy tools for inclusive society
-- **Priority 3**: AI-powered policy analysis democratizing complex modeling
+- **Priority 3**: AI-powered policy analysis democratising complex modelling
 - **Priority 5**: Evidence-based tools for effective institutions
 
 ## Next Steps

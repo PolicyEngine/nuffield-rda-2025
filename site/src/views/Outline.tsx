@@ -1,4 +1,4 @@
-import { responses, wordCounts, wordLimits } from '../data/outline-responses'
+import { responses, wordCounts, wordLimits, totalBudget } from '../data/outline-responses'
 import ReactMarkdown from 'react-markdown'
 
 function Outline() {
@@ -54,7 +54,40 @@ function Outline() {
     .reduce((sum, limit) => sum + (limit as number), 0)
 
   const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text)
+    // Strip all markdown formatting for plain text copy
+    let plainText = text
+
+    // Remove HTML comments
+    plainText = plainText.replace(/<!--.*?-->/gs, '')
+
+    // Remove bold/italic (multiple passes)
+    for (let i = 0; i < 3; i++) {
+      plainText = plainText.replace(/\*\*([^\*]+)\*\*/g, '$1')
+      plainText = plainText.replace(/\*([^\*]+)\*/g, '$1')
+    }
+
+    // Remove headers
+    plainText = plainText.replace(/^#+\s+/gm, '')
+
+    // Remove checkboxes
+    plainText = plainText.replace(/☑\s*/g, '')
+    plainText = plainText.replace(/☐\s*/g, '')
+
+    // Remove bullet/list markers
+    plainText = plainText.replace(/^\s*[-•*]\s+/gm, '')
+    plainText = plainText.replace(/^\s*\d+\.\s+/gm, '')
+
+    // Remove inline code
+    plainText = plainText.replace(/`([^`]+)`/g, '$1')
+
+    // Remove any remaining asterisks
+    plainText = plainText.replace(/\*\*/g, '')
+    plainText = plainText.replace(/\*/g, '')
+
+    // Clean whitespace
+    plainText = plainText.replace(/\n\n\n+/g, '\n\n').trim()
+
+    navigator.clipboard.writeText(plainText)
   }
 
   const getStatusEmoji = (key: string) => {
@@ -97,7 +130,7 @@ function Outline() {
         }}>
           <span style={{ fontWeight: '600' }}>Total Budget:</span>
           <span style={{ fontSize: '1.5rem', fontWeight: '700', color: '#2ecc71', fontFamily: 'monospace' }}>
-            £324,000
+            £{totalBudget.toLocaleString()}
           </span>
         </div>
       </div>
@@ -231,7 +264,7 @@ function Outline() {
         <ul style={{ marginBottom: 0, marginTop: '0.5rem' }}>
           <li>
             <a href="/nuffield-rda-2025/portfolio">
-              Project Portfolio (£324k components) →
+              Project Portfolio (£{(totalBudget / 1000).toFixed(0)}k components) →
             </a>
           </li>
           <li>

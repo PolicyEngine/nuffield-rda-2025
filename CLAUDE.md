@@ -46,10 +46,42 @@ python3 scripts/sync_content.py  # Sync content to site
 
 ## Development Workflow
 
-1. Edit application sections in `docs/`
-2. Run sync script to update site content
-3. Review progress using the local development site
-4. Commit changes and push
+### Making Content Changes
+
+**IMPORTANT:** The site is generated from markdown source files. To avoid misalignment:
+
+1. **Edit markdown source files** in `docs/outline/responses/*.md` (individual question responses) or `docs/outline/project_portfolio.md` (portfolio)
+2. **Run assembly script** to generate ASSEMBLED_OUTLINE.md:
+   ```bash
+   cd docs/outline && python3 assemble_outline.py
+   ```
+3. **Run sync script** to update React site data:
+   ```bash
+   python3 scripts/sync_content.py
+   ```
+4. **Review on dev site** at http://localhost:5173/nuffield-rda-2025/
+5. **Commit all changes** (both markdown sources and generated files)
+
+### Key Files
+
+**Source Files (edit these):**
+- `docs/outline/responses/a_project_summary.md` - Project summary (100 words)
+- `docs/outline/responses/b_research_questions.md` - Research questions (200 words)
+- `docs/outline/responses/c_case_for_importance.md` - Case for importance (200 words)
+- `docs/outline/responses/d_outcomes_and_influence.md` - Outcomes and influence (300 words)
+- `docs/outline/responses/e_methods_approach_activities.md` - Methods (750 words)
+- `docs/outline/responses/f_research_engagement_team.md` - Team (250 words)
+- `docs/outline/responses/g_budget.md` - Budget table
+- `docs/outline/responses/h_bibliographic_references.md` - References (350 words)
+- `docs/outline/project_portfolio.md` - Full portfolio description
+
+**Generated Files (do not edit directly):**
+- `docs/outline/ASSEMBLED_OUTLINE.md` - Auto-generated from responses/*.md
+- `site/src/data/portfolioData.ts` - Auto-generated from project_portfolio.md
+
+**React Components (render generated data):**
+- `site/src/views/Portfolio.tsx` - Imports from portfolioData.ts
+- Other views in `site/src/views/*.tsx` - Manually maintained
 
 ## Grant Priority Questions
 

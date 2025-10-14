@@ -1,30 +1,25 @@
 <!-- D) Outcomes and Influence -->
 <!-- Maximum 300 words -->
 
-**Expected Impact Types:**
-- Informing policy/legislative change (Budgets, manifestos)
-- Improving understanding of distributional consequences
-- Building capability across diverse stakeholders
-- Changing attitudes about evidence accessibility
+<!--
+IMPACT TYPES TO SELECT IN FORM (do not copy):
+☑ Informing change to policies, systems or legislation
+☑ Improving or advancing understanding or awareness of an issue
+☑ Providing opportunity and building capability
+-->
 
-**Impact Pathways:**
+This project will inform policy and legislative change during critical moments (Budgets, manifestos), improve understanding of distributional consequences, and build capability across diverse stakeholders.
 
-Our outputs will directly inform policy debates during critical moments. The policy response buffer ensures Budget analysis reaches media and MPs within 48 hours of announcements, when public attention peaks. The poverty dashboard will provide real-time tracking of child poverty—a major government priority—enabling accountability and evidence-based policy adjustments.
+Our outputs directly inform policy debates when public attention peaks. Our rapid Budget analysis capacity ensures findings reach media and MPs within 48 hours of announcements. The poverty dashboard provides real-time tracking of child poverty—a major government priority—enabling accountability and evidence-based policy adjustments.
 
-**Dissemination and Influencing Strategy:**
+We prioritise four audience segments with tailored engagement:
 
-We will prioritize four audience segments with tailored engagement:
+**Government and Parliament:** Parliamentary constituency toolkit and targeted sessions enable MPs and officials to analyse local impacts, building on HM Treasury relationships.
 
-**1. Government and Parliament (direct influence):**
-Parliamentary constituency toolkit and training sessions enable MPs and officials to analyze local impacts of any policy proposal. Building on existing relationships with HM Treasury and parliamentary groups.
+**Media:** Programme reaches journalists serving 650 constituencies through regional coverage, while national workshops ensure Budget analysis appears in quality outlets within news cycles.
 
-**2. Media (public discourse):**
-Local media training program reaches journalists serving 650 constituencies, multiplying our reach through regional coverage. National media workshops ensure Budget analysis appears in quality outlets within news cycles.
+**Civil Society:** Workshops equip NGOs and charities with the same tools used by government. Pre-built templates lower barriers while maintaining strict political neutrality.
 
-**3. Civil Society (inclusive representation):**
-NGO and charity training workshops provide the same free tools used by government, leveling the playing field. Pre-built templates lower barriers to evidence-based advocacy while maintaining our strict political neutrality.
-
-**4. Research Community (knowledge generation):**
-Conference presentations (6-8 over two years) and annual user symposia share findings with academic economists and policy researchers. Open-source outputs enable replication and extension.
+**Research Community:** Conference presentations (9-12 over three years) and annual symposia share findings with academic economists, with open-source outputs enabling replication.
 
 Our success metrics include adoption by target audiences, media citations during policy moments, parliamentary usage, and measurable improvements in evidence quality within policy debates compared to baseline periods.

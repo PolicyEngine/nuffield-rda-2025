@@ -1,171 +1,166 @@
-// Outline application responses - synced from docs/outline/responses/
+// Auto-generated from docs/outline/responses/*.md
+// DO NOT EDIT DIRECTLY - Run: python3 scripts/sync_content.py
 
 export const responses = {
-  a_project_summary: `PolicyEngine's free microsimulation model enables analysis of tax and benefit policies at household and national levels. Following successful elite adoption—including an HM Treasury pilot and integration with major think tanks—this project scales proven capabilities to civil society. Building on Nuffield-funded infrastructure (local disaggregation, AI pilot, training program), we will enhance accessibility through AI-powered report authoring, expand coverage with council tax modeling, and scale community engagement through training and partnerships. This enables local media, MPs, and civil society organizations to analyze any policy proposal with the same tools trusted by government, democratizing evidence-based policymaking.`,
+  a_project_summary: `PolicyEngine's open-source microsimulation model enables tax and benefit policy analysis at household, local, and national levels. Following successful elite adoption—including an HM Treasury pilot and use by major think tanks—this three-year project enhances the model's capacity to provide evidence on the UK's most critical policy issues. We will expand coverage with council tax modelling, integrate policy-critical datasets (OBR projections, DWP data), develop AI capabilities for natural language insights, and ensure rapid Budget response. Through targeted roundtables and research partnerships with expert stakeholders and local organisations, we ensure microsimulation evidence informs policy debates when decisions are made.`,
 
-  b_research_questions: `This project addresses three interconnected research questions about democratizing policy analysis:
+  b_research_questions: `This three-year project addresses interconnected research questions about using microsimulation to inform policy decisions:
 
-**1. How can AI democratize access to elite-grade policy analysis tools while maintaining accuracy and trust?**
+**1. How can AI enable broader use of microsimulation evidence for policy decisions through evolving interfaces while maintaining accuracy and trust?**
 
-We will develop and evaluate AI-powered report authoring tools that translate natural language queries into rigorous microsimulation analysis. By measuring user comprehension, accuracy of AI-generated outputs, and trust levels across different stakeholder groups, we will establish best practices for responsible AI deployment in policy analysis.
+Building on our current grant's natural language microsimulation insights, we will develop household-level AI capabilities, Model Context Protocol (MCP) servers for AI assistant integration, and explore emerging platforms. Tracking comprehension, accuracy, and trust across interfaces over three years establishes best practices for AI-enabled policy analysis.
 
-**2. What is the impact of providing local policymakers and civil society with constituency-level microsimulation capabilities?**
+**2. How does integrating authoritative datasets enhance microsimulation's capacity to inform policy on critical issues?**
 
-Building on our Nuffield-funded local disaggregation work, we will assess how access to constituency-level analysis affects policy engagement by MPs, local media, and community organizations. We will track usage patterns, measure quality of policy discourse, and evaluate whether local granularity increases evidence-based decision-making.
+We will assess how integrated OBR projections (enabling validation against official forecasts) and DWP enrollment data (combining simulation with actual programme participation) improve the model's ability to address policy questions around child poverty, benefit reform, and fiscal sustainability—issues central to current UK policy debates.
 
-**3. Can rapid-response evidence provision improve the quality and inclusivity of policy debates during critical moments?**
+**3. What outreach strategies maximise adoption among both expert stakeholders and under-resourced local organisations?**
 
-During Budget announcements and election periods, we will evaluate whether 48-hour policy analysis turnaround affects media coverage quality, parliamentary debate, and public understanding, comparing periods with and without rapid PolicyEngine analysis.`,
+Through a dedicated research staff member partnering on research questions, targeted roundtables, and constituency-level analysis, we will identify effective approaches for engaging expert feedback while establishing effective adoption at the local level.`,
 
-  c_case_for_importance: `This project addresses a critical inflection point: elite institutions have validated PolicyEngine—HM Treasury published an official algorithmic transparency record of their pilot, and our estimates consistently align with the Institute for Fiscal Studies and Resolution Foundation—yet civil society lacks equivalent access to rigorous policy analysis.
+  c_case_for_importance: `This project addresses a critical need: validating and enhancing microsimulation's capacity to inform policy on the UK's most pressing issues. Elite institutions have validated PolicyEngine—HM Treasury published an official algorithmic transparency record (HM Treasury, 2024), and our estimates align with IFS, OBR, and Resolution Foundation. Building on this validation, we will expand the model's capabilities to address policy questions these institutions face.
 
-The previous Nuffield grant built comprehensive infrastructure (650 parliamentary constituencies, childcare modeling, AI pilot, validation dashboards). This investment exceeded expectations: rather than serving only under-resourced think tanks, it attracted the UK's most powerful policy institutions. This success creates an unprecedented opportunity to democratize elite-grade analysis.
+The previous Nuffield grant (Nuffield Foundation, 2024) built infrastructure (650 constituencies, childcare modelling (PolicyEngine, 2024a), AI pilot, validation dashboards) proving valuable beyond expectations to the UK's most powerful policy institutions. This demonstrates the model's relevance for critical policy questions and creates opportunity to enhance capacity further.
 
-The project is distinctive in combining proven technical capacity with strategic timing. Budget cycles and election periods create natural experiments for evaluating rapid evidence provision. Our constituency-level data, developed with Nuffield support, enables at-scale partnerships with local media and MPs that were previously impossible.
+The project combines proven capacity with strategic timing and sustained AI development. Budget cycles and elections create natural experiments for evidence evaluation. Our constituency data enables partnerships with local media and MPs. The three-year timeline tracks AI evolution while building dataset integrations enhancing model capacity and validation.
 
-This directly addresses Nuffield priorities: building trustworthy institutions through evidence democratization (Priority 5), ensuring AI technology benefits all stakeholders not just elites (Priority 3), and advancing prosperity through more informed, inclusive policy debates (Priorities 1 and 2). The research capitalizes on substantial previous investment while addressing new questions about scaling technical tools to democratic participation.`,
+This addresses Nuffield's interests in trustworthy institutions through evidence-based policymaking, technology serving society's needs, and prosperity through better-informed decisions on poverty and fiscal sustainability. The research capitalises on substantial previous investment while addressing how microsimulation can inform the UK's most critical policy questions.`,
 
-  d_outcomes_and_influence: `**Expected Impact Types:**
-- Informing policy/legislative change (Budgets, manifestos)
-- Improving understanding of distributional consequences
-- Building capability across diverse stakeholders
-- Changing attitudes about evidence accessibility
+  d_outcomes_and_influence: `This project will inform policy and legislative change during critical moments (Budgets, manifestos), improve understanding of distributional consequences, and build capability across diverse stakeholders.
 
-**Impact Pathways:**
+Our outputs directly inform policy debates when public attention peaks. Our rapid Budget analysis capacity ensures findings reach media and MPs within 48 hours of announcements. The poverty dashboard provides real-time tracking of child poverty—a major government priority—enabling accountability and evidence-based policy adjustments.
 
-Our outputs will directly inform policy debates during critical moments. The policy response buffer ensures Budget analysis reaches media and MPs within 48 hours of announcements, when public attention peaks. The poverty dashboard will provide real-time tracking of child poverty—a major government priority—enabling accountability and evidence-based policy adjustments.
+We prioritise four audience segments with tailored engagement:
 
-**Dissemination and Influencing Strategy:**
+**Government and Parliament:** Parliamentary constituency toolkit and targeted sessions enable MPs and officials to analyse local impacts, building on HM Treasury relationships.
 
-We will prioritize four audience segments with tailored engagement:
+**Media:** Programme reaches journalists serving 650 constituencies through regional coverage, while national workshops ensure Budget analysis appears in quality outlets within news cycles.
 
-**1. Government and Parliament (direct influence):**
-Parliamentary constituency toolkit and training sessions enable MPs and officials to analyze local impacts of any policy proposal. Building on existing relationships with HM Treasury and parliamentary groups.
+**Civil Society:** Workshops equip NGOs and charities with the same tools used by government. Pre-built templates lower barriers while maintaining strict political neutrality.
 
-**2. Media (public discourse):**
-Local media training program reaches journalists serving 650 constituencies, multiplying our reach through regional coverage. National media workshops ensure Budget analysis appears in quality outlets within news cycles.
-
-**3. Civil Society (inclusive representation):**
-NGO and charity training workshops provide the same free tools used by government, leveling the playing field. Pre-built templates lower barriers to evidence-based advocacy while maintaining our strict political neutrality.
-
-**4. Research Community (knowledge generation):**
-Conference presentations (6-8 over two years) and annual user symposia share findings with academic economists and policy researchers. Open-source outputs enable replication and extension.
+**Research Community:** Conference presentations (9-12 over three years) and annual symposia share findings with academic economists, with open-source outputs enabling replication.
 
 Our success metrics include adoption by target audiences, media citations during policy moments, parliamentary usage, and measurable improvements in evidence quality within policy debates compared to baseline periods.`,
 
-  e_methods_approach_activities: `Our project comprises three interconnected workstreams, each building on previous Nuffield-funded infrastructure while addressing scaling challenges identified through elite adoption.
+  e_methods_approach_activities: `Our three-year project comprises interconnected workstreams building on previous Nuffield-funded infrastructure while addressing scaling challenges identified through elite adoption.
 
-**WORKSTREAM 1: ACCESSIBILITY THROUGH TECHNOLOGY (£110k, 13.5 person-months)**
+**WORKSTREAM 1: AI-POWERED ACCESSIBILITY AND DATA INTEGRATION**
 
-**AI-Powered Report Authoring (£53k, 6pm)**
+**Multi-Surface AI Integration**
 
-Building on our proven AI pilot from the previous grant, we will develop production-ready natural language interfaces for policy analysis. Users will query in plain English ("How much would increasing Child Benefit by £10/week cost?") and receive rigorous analysis with charts, tables, and distributional impacts.
+Our current grant launches natural language microsimulation insights and policy interaction explanations. We expand these over three years: Year 1 develops natural language query interfaces, household-level AI capabilities, and Model Context Protocol (MCP) servers—standardised interfaces enabling AI assistants to access PolicyEngine programmatically; Years 2-3 monitor and integrate with emerging AI surfaces as they become available (e.g., ChatGPT's recently announced external app support (OpenAI, 2025)).
 
-Methods: We will employ large language models (Claude, GPT-4) to parse queries, extract policy parameters, invoke our Python microsimulation engine, and generate formatted reports. Quality assurance includes: (1) validation against known policy costings, (2) expert review of AI-generated explanations, (3) user comprehension testing across stakeholder groups, (4) bias auditing to ensure neutrality.
+Methods: LLM integration (Claude, GPT-4), MCP development, validation against known costings, expert review, user testing, bias auditing. We track accuracy, trust, and usage patterns (Research Question 1).
 
-Deliverables: Natural language query interface, automated chart generation, PDF/Word/HTML export, template library for common analyses.
+**Dataset Integration for Enhanced Value**
 
-**OBR/HMT Validation Integration (£28k, 3.5pm)**
+We integrate authoritative datasets including OBR projections (enabling "PolicyEngine vs official forecasts" comparisons), DWP enrollment data (combining simulation with actual take-up patterns), and others from ONS, HMT, and HMRC as needed. This addresses Research Question 2 by measuring how dataset integration affects user confidence and research partnerships.
 
-We will create automated validation dashboards comparing PolicyEngine estimates against official Office for Budget Responsibility and HM Treasury projections. When discrepancies exceed thresholds, the system will flag them and generate explanatory notes about differing assumptions.
+Methods: Data collection protocols, automated comparison algorithms, discrepancy analysis, public dashboards, API development, historical integration.
 
-Methods: Systematic collection of official costings, automated comparison algorithms, discrepancy analysis, public-facing dashboard updated with each model release.
+**WORKSTREAM 2: MODEL ENHANCEMENT AND POLICY RESPONSE**
 
-**Local Media and Parliamentary Tools (£35k, 4pm)**
+**Council Tax Integration**
 
-We will develop constituency-specific features and training programs: enhanced web application views showing "Your Constituency at a Glance," automated local impact report generation, and workshops with regional press associations and parliamentary staff.
+We will add council tax to microsimulation, enabling combined local and national tax burden analysis. This addresses a significant gap—existing models omit local taxation despite £40bn annual revenue.
 
-Methods: UI/UX enhancements for constituency views, reusable report templates, training curriculum development, partnership coordination with regional media and parliamentary offices.
+Methods: Test-driven development (proven with childcare (PolicyEngine, 2024a)): (1) implement council tax bands and local authority rates from MHCLG data (MHCLG, 2024), (2) validation test cases, (3) compare against administrative totals, (4) validate distributional impacts.
 
-**WORKSTREAM 2: MODEL ENHANCEMENT AND POLICY RESPONSE (£82k, 9pm)**
+Deliverables: Council tax by band and local authority, national model integration, validation report, policy examples.
 
-**Council Tax Integration (£32k, 4pm)**
+**Budget and Policy Moment Analysis**
 
-We will add council tax to our microsimulation, enabling analysis of combined local and national tax burdens. This addresses a significant gap—existing models typically omit local taxation despite its £40bn annual revenue and substantial distributional effects.
+We will provide rapid-response analysis for critical policy moments: (1) Spring Budget analysis (distributional impacts, household examples, regional breakdowns); (2) Autumn Budget analysis; (3) Election manifesto comparisons; (4) Ad hoc urgent requests. Flexible allocation permits model enhancements if needed.
 
-Methods: Following our proven test-driven development approach used for childcare subsidies, we will: (1) implement council tax bands and local authority rates from MHCLG data, (2) create validation test cases from published examples, (3) compare aggregate outputs against administrative totals, (4) validate distributional impacts against external analyses.
+Methods: 48-hour turnaround protocols, template-based generation, pre-positioned scenarios, weekend capacity. Each Budget requires 1-2 person-weeks intensive work.
 
-Deliverables: Council tax calculation by band and local authority, integration with national tax-benefit model, validation report, policy analysis examples.
+Deliverables: 3 Spring Budgets, 3 Autumn Budgets (e.g., PolicyEngine, 2024c), manifestos (e.g., PolicyEngine, 2024b), ad hoc requests, model enhancements (VAT, monthly data) as needed.
 
-**Policy Response Buffer (£50k, 5pm)**
+**WORKSTREAM 3: RESEARCH PARTNERSHIPS AND COMMUNITY ENGAGEMENT**
 
-Reserve capacity for rapid response to Budgets, manifestos, and emerging policy proposals. This flexible allocation can include model enhancements (VAT improvements, monthly data integration) if situations warrant.
+**Local Media and Parliamentary Outreach**
 
-Methods: Rapid analysis protocols ensuring 48-hour turnaround from Budget announcement to published analysis. Template-based report generation, pre-positioning of common reform scenarios, weekend/urgent response capacity.
+We will develop constituency-specific features and coordinate targeted engagement: enhanced web views showing "Your Constituency at a Glance," automated local reports, roundtables with regional press, workshops with parliamentary staff.
 
-Deliverables: Analysis of 2 Spring Budgets (March), 2 Autumn Budgets (October/November), election manifestos, ad-hoc requests. Model enhancements as needed.
+Methods: UI/UX enhancements (Citizen Codex design agency), report templates, roundtable/workshop development, partnership coordination.
 
-**WORKSTREAM 3: COMMUNITY SCALING AND EVIDENCE DEMOCRATIZATION (£132k, 18pm)**
+**Expert Engagement and Local Market Development**
 
-**External Citations and Adoption Program (£40k, 5pm)**
+A dedicated research staff member balances: (1) engaging expert stakeholders for feedback and validation, and (2) establishing effective adoption among local organisations and under-resourced groups new to microsimulation. Target: 75+ external citations over three years through research partnerships.
 
-Rather than a fixed training schedule, we will employ a flexible, output-oriented approach targeting 50+ external citations and reports using PolicyEngine over 24 months. As AI features improve tool accessibility, we will focus on discovering user needs and providing tailored support.
+Methods: Targeted expert roundtables, research partnership development, regional workshops with local councils, user needs discovery, co-creation with new organisations. Track citations, partnerships, and adoption patterns (Research Question 3).
 
-Methods: Hybrid training sessions (virtual and in-person as needed), regional visits to local organizations, smaller community-building events, user needs discovery interviews, tailored technical support. We will track citations in external reports, media coverage, and parliamentary references as success metrics.
+**Annual User Symposia**
 
-**Annual User Symposia (£25k, 2pm)**
+We will host three annual gatherings: 50-100 PolicyEngine users, case study presentations, methodology discussions, networking.
 
-Continue the successful symposium model: annual gatherings of 50-100 PolicyEngine users for case study presentations, methodology discussions, and networking.
+Methods: London venue arrangement, user presentation curation, expert panels, feedback collection.
 
-Methods: Venue arrangement (London-based for accessibility), user presentation curation, expert panel discussions, feedback collection for product development.
+**Poverty and Child Poverty Dashboard**
 
-**Poverty and Child Poverty Dashboard (£32k, 4pm)**
+We will develop a public dashboard with real-time poverty metrics and policy scenario comparisons, focusing on child poverty given policy salience.
 
-Public-facing dashboard providing real-time poverty metrics and policy scenario comparisons, with particular focus on child poverty given current policy salience.
+Methods: Dashboard development (Plotly), microsimulation integration, scenario comparison, public deployment.
 
-Methods: Dashboard development using established visualization libraries (Plotly), integration with microsimulation outputs, scenario comparison interface, public deployment and promotion.
+**Civil Society Workshops and Academic Dissemination**
 
-**Civil Society and Conference Engagement (£50k, 5pm)**
+We will deliver specialised NGO/charity workshops, 9-12 conference presentations over three years, and implement a professional CRM for user segment tracking.
 
-Training for NGOs and charities, presentations at major economics conferences (6-8 total), and professional CRM system for engagement tracking.
-
-Methods: Workshop development and delivery for civil society, conference paper development and presentation, CRM implementation and user segmentation.
+Methods: Workshop development/delivery, conference papers, CRM implementation with segmentation.
 
 **QUALITY ASSURANCE AND EVALUATION**
 
-All workstreams employ: test-driven development, expert advisory board review, beta testing with target users, and transparent validation against external benchmarks. We will track adoption metrics, usage patterns during policy moments, and comparative quality of evidence cited in media and parliamentary debates.`,
+All workstreams employ test-driven development, expert review, beta testing, and transparent external validation. We track adoption metrics, usage during policy moments, and evidence quality in debates.`,
 
-  f_research_engagement_team: `**Max Ghenis** (PI, PolicyEngine CEO, 40% FTE) will supervise all workstreams and lead dissemination strategy and stakeholder engagement. Max previously founded the UBI Center and served as a data scientist at Google. He holds degrees from UC Berkeley (B.A. Operations Research) and MIT (M.S. Development Economics).
+  f_research_engagement_team: `**Max Ghenis** (PI, PolicyEngine CEO, 25% FTE) will supervise all workstreams and lead dissemination strategy and stakeholder engagement. Max previously founded the UBI Center and served as a data scientist at Google. He holds degrees from UC Berkeley (B.A. Operations Research) and MIT (M.S. Development Economics).
 
-**Nikhil Woodruff** (Co-I, PolicyEngine CTO and UK Director, 50% FTE) leads technical development and UK operations. Nikhil holds a B.Sc. in Computer Science from Durham University and previously served as UBI Center UK Research Director. He will supervise contractor developers and coordinate with advisory board members. (Note: FTE adjusted from previous grant due to other commitments.)
+**Nikhil Woodruff** (PolicyEngine CTO and UK Director, 25% FTE) leads technical development and UK operations. Nikhil holds a B.Sc. in Computer Science from Durham University and previously served as UBI Center UK Research Director. He will supervise contractor developers and coordinate with advisory board members.
 
-**Vahid Ahmadi** (UK Research Associate, 87% FTE) focuses on model development (council tax), policy analysis production, and user support. Vahid brings experience in UK economic policy modeling and will support training and outreach activities.
+**Vahid Ahmadi** (UK Research Associate, 75% FTE) serves as the dedicated research staff member leading outreach and partnership development. Previously a pre-doctoral researcher at the Centre for Macroeconomics at the London School of Economics, Vahid holds an M.Sc. in Economics from the University of Munich and a B.Sc. in Electrical Engineering from Sharif University of Technology. He focuses on model development (council tax), policy analysis production, and coordinating targeted roundtables, workshops, and research partnerships balancing expert stakeholder engagement with fostering adoption among local organisations.
 
-**Anthony Volk** (Full-stack Engineer, contractor, 40% FTE) leads UI development including AI authoring interface and constituency toolkit. Anthony conducted infrastructure research at the Institute for State Effectiveness and holds degrees from Harvard University.
+**Anthony Volk** (Full-stack Engineer, contractor, 22% FTE) leads UI development including AI authoring interface and constituency toolkit. Anthony conducted infrastructure research at the Institute for State Effectiveness and holds degrees from Harvard University.
 
-**Pavel Makarchuk** (Policy Modeling Manager, contractor, 15% FTE) supports model development drawing on his experience leading our US and Canada rules engines. Bachelor's degree in Economics from Marist College.
-
-Max and Nikhil will jointly lead dissemination and influencing strategy. All team members contribute to dissemination through their respective channels (technical, policy, outreach).`,
+Max will lead dissemination and influencing strategy with support from Nikhil. All team members contribute to dissemination through their respective channels (technical, policy, outreach).`,
 
   g_budget: `| Budget Category | Amount (£) |
 |----------------|-----------|
-| Staff costs: PI Time | 76,800 |
-| Staff costs: Co-I Time | 96,000 |
-| Staff costs: Team Members | 75,000 |
-| Staff costs: Consultants | 12,000 |
-| Staff costs: Overheads and Estate costs | 28,000 |
+| Staff costs: PI Time | 60000 |
+| Staff costs: Co-I Time | 0 |
+| Staff costs: Team Members | 152000 |
+| Staff costs: Consultants | 48000 |
+| Staff costs: Overheads and Estate costs | 28000 |
 | Non staff costs: Qualitative research | 0 |
 | Non staff costs: Quantitative research | 0 |
-| Non staff costs: Communications and stakeholder engagement | 55,200 |
-| Non staff costs: Equipment | 14,000 |
-| Non staff costs: Other direct costs | 21,000 |
-| **Grand Total** | **324,000** |`,
+| Non staff costs: Communications and stakeholder engagement | 50000 |
+| Non staff costs: Equipment | 8000 |
+| Non staff costs: Other direct costs | 34000 |
+| **Grand Total** | **380000** |
+
+**Notes for application form (numbers only, no decimals/symbols):**
+- PI Time: 60000
+- Co-I Time: 0
+- Team Members: 152000
+- Consultants: 48000
+- Overheads: 28000
+- Communications: 50000
+- Equipment: 8000
+- Other direct: 34000
+- **Grand total: 380000**`,
 
   h_bibliographic_references: `HM Treasury (2024). *Algorithmic Transparency Recording Standard: HMT Modelling - Policy Engine*. Retrieved from https://www.gov.uk/algorithmic-transparency-records/hmt-modelling-policy-engine
 
-Ministry of Housing, Communities and Local Government (MHCLG) (2024). *Council Tax Statistics*. Retrieved from https://www.gov.uk/government/collections/council-tax-statistics
+Ministry of Housing, Communities and Local Government (2024). *Council Tax Statistics*. Retrieved from https://www.gov.uk/government/collections/council-tax-statistics
 
-Office for Budget Responsibility (2024). *Economic and Fiscal Outlook*. Retrieved from https://obr.uk/efo/economic-and-fiscal-outlook-october-2024/
+Nuffield Foundation (2024). *Enhancing, localising and democratising tax-benefit policy analysis*. Retrieved from https://www.nuffieldfoundation.org/project/enhancing-localising-and-democratising-tax-benefit-policy-analysis
 
-PolicyEngine (2024). *PolicyEngine UK Validation Dashboard*. Retrieved from https://policyengine-uk-validation.streamlit.app
+OpenAI (2025). *Introducing apps in ChatGPT*. Retrieved from https://openai.com/index/introducing-apps-in-chatgpt/
 
-PolicyEngine (2024). *Labour Party Manifesto Analysis*. Retrieved from https://policyengine.org/uk/research/labour-manifesto-2024
+PolicyEngine (2024a). *Childcare programmes in PolicyEngine UK*. Retrieved from https://policyengine.org/uk/research/uk-childcare-report
 
-PolicyEngine (2024). *Autumn Budget 2024 Analysis*. Retrieved from https://policyengine.org/uk/research/autumn-budget-2024
+PolicyEngine (2024b). *The Labour Party Manifesto*. Retrieved from https://policyengine.org/uk/research/labour-2024-manifesto
 
-Woodruff, N., & Ghenis, M. (2024). *Enhancing UK Household Microdata for Policy Analysis*. International Journal of Microsimulation (under peer review).
+PolicyEngine (2024c). *Autumn Budget 2024 policy choices*. Retrieved from https://policyengine.org/uk/research/autumn-budget-2024-policy-choices`,
 
-Digital Public Goods Alliance (2024). *Digital Public Goods Registry: PolicyEngine*. Retrieved from https://digitalpublicgoods.net/registry/policyengine.html`
 }
 
 // Word count helper
@@ -179,14 +174,14 @@ export function countWords(text: string): number {
 }
 
 export const wordCounts = {
-  a_project_summary: 93,
-  b_research_questions: 178,
-  c_case_for_importance: 200,
-  d_outcomes_and_influence: 279,
-  e_methods_approach_activities: 725,
-  f_research_engagement_team: 183,
-  g_budget: 0, // Table format
-  h_bibliographic_references: 67
+  a_project_summary: 96,
+  b_research_questions: 185,
+  c_case_for_importance: 198,
+  d_outcomes_and_influence: 192,
+  e_methods_approach_activities: 617,
+  f_research_engagement_team: 232,
+  g_budget: 0,
+  h_bibliographic_references: 79,
 }
 
 export const wordLimits = {
@@ -197,5 +192,7 @@ export const wordLimits = {
   e_methods_approach_activities: 750,
   f_research_engagement_team: 250,
   g_budget: null,
-  h_bibliographic_references: 350
+  h_bibliographic_references: 350,
 }
+
+export const totalBudget = 380000

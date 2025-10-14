@@ -1,11 +1,8 @@
-<!-- G) Budget -->
-<!-- No word limit - table format -->
-
 | Budget Category | Amount (£) |
 |----------------|-----------|
 | Staff costs: PI Time | 60000 |
-| Staff costs: Co-I Time | 0 |
-| Staff costs: Team Members | 152000 |
+| Staff costs: Co-I Time | 50000 |
+| Staff costs: Team Members | 102000 |
 | Staff costs: Consultants | 48000 |
 | Staff costs: Overheads and Estate costs | 28000 |
 | Non staff costs: Qualitative research | 0 |
@@ -13,15 +10,15 @@
 | Non staff costs: Communications and stakeholder engagement | 50000 |
 | Non staff costs: Equipment | 8000 |
 | Non staff costs: Other direct costs | 34000 |
-| **Grand Total** | **380000** |
+| Grand Total | 380000 |
 
-**Notes for application form (numbers only, no decimals/symbols):**
-- PI Time: 60000
-- Co-I Time: 0
-- Team Members: 152000
-- Consultants: 48000
-- Overheads: 28000
-- Communications: 50000
-- Equipment: 8000
-- Other direct: 34000
-- **Grand total: 380000**
+Notes for application form (numbers only, no decimals/symbols):
+PI Time: 60000
+Co-I Time: 50000
+Team Members: 102000
+Consultants: 48000
+Overheads: 28000
+Communications: 50000
+Equipment: 8000
+Other direct: 34000
+Grand total: 380000
