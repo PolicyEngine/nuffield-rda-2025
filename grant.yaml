@@ -1,17 +1,37 @@
 id: nuffield-rda-2025
-name: PolicyEngine UK Research Infrastructure Development
+name: Advancing evidence-based policy with AI & tax-benefit microsimulation
 foundation: Nuffield Foundation
 program: Research, Development and Analysis Fund
-status: submitted
+status: invited_full_application
+reference: FR-000027022
 
-deadline: '2025-10-06'
-requested_start_date: '2026-01-01'
-duration_years: 2
-amount_requested: 300000
-budget_cap: 500000
+# Outline stage (submitted Oct 2025)
+outline_deadline: '2025-10-06'
+outline_amount_requested: 380000
+
+# Full application stage
+full_application_deadline: '2026-01-14'
+requested_start_date: '2026-07-01'
+duration_years: 3
+amount_requested: 300000  # Nuffield capped at £100k/year
+budget_cap: 300000
 
 repo_url: https://github.com/PolicyEngine/nuffield-rda-2025
 solicitation_url: https://www.nuffieldfoundation.org/funding/research-development-and-analysis-fund
+
+# Feedback from Nuffield (Nov 28, 2025)
+feedback:
+  date: '2025-11-28'
+  summary: |
+    Outline was "smorgasbord of activities without sufficiently clear strategic thread".
+    Requested restructured approach with fewer committed activities and more flexibility.
+  key_points:
+    - Small number of specific committed activities (council tax integration suggested)
+    - Annual substantive output (e.g., autumn budget analysis)
+    - Flexible development activities with indicative list
+    - Optional core operation costs
+    - Diversify funding sources
+    - Organizational development (governance, management, staff)
 
 nuffield:
   application_type: outline
