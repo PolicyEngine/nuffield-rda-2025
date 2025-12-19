@@ -1,0 +1,1 @@
+../docs/outline/responses/h_bibliographic_references.md

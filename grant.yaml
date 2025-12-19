@@ -1,0 +1,59 @@
+id: nuffield-rda-2025
+name: PolicyEngine UK Research Infrastructure Development
+foundation: Nuffield Foundation
+program: Research, Development and Analysis Fund
+status: submitted
+
+deadline: '2025-10-06'
+requested_start_date: '2026-01-01'
+duration_years: 2
+amount_requested: 300000
+budget_cap: 500000
+
+repo_url: https://github.com/PolicyEngine/nuffield-rda-2025
+solicitation_url: https://www.nuffieldfoundation.org/funding/research-development-and-analysis-fund
+
+nuffield:
+  application_type: outline
+  typical_award: 300000
+  max_award: 500000
+  exceptional_max: 750000
+  duration_months_min: 6
+  duration_months_max: 36
+  portal_url: https://www.nuffieldfoundation.org/funding/research-development-and-analysis-fund
+  priority_questions:
+    - Building a prosperous and fair society
+    - Creating an inclusive society
+    - Ensuring science and technology benefit people
+  sections:
+    - id: a_project_summary
+      title: Project Summary
+      word_limit: 100
+      file: responses/a_project_summary.md
+    - id: b_research_questions
+      title: Research Questions
+      word_limit: 200
+      file: responses/b_research_questions.md
+    - id: c_case_for_importance
+      title: Case for Importance
+      word_limit: 200
+      file: responses/c_case_for_importance.md
+    - id: d_outcomes_and_influence
+      title: Outcomes and Influence
+      word_limit: 300
+      file: responses/d_outcomes_and_influence.md
+    - id: e_methods_approach_activities
+      title: Methods, Approach and Activities
+      word_limit: 750
+      file: responses/e_methods_approach_activities.md
+    - id: f_research_engagement_team
+      title: Research and Engagement Team
+      word_limit: 250
+      file: responses/f_research_engagement_team.md
+    - id: g_budget
+      title: Budget
+      file: responses/g_budget.md
+    - id: h_bibliographic_references
+      title: Bibliographic References
+      word_limit: 350
+      file: responses/h_bibliographic_references.md

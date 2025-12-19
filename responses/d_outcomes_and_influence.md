@@ -1,0 +1,1 @@
+../docs/outline/responses/d_outcomes_and_influence.md

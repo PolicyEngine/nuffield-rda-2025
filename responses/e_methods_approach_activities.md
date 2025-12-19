@@ -1,0 +1,1 @@
+../docs/outline/responses/e_methods_approach_activities.md
