@@ -1,1 +1,7 @@
-../docs/outline/responses/c_case_for_importance.md
+This project addresses a critical need: validating and enhancing microsimulation's capacity to inform policy on the UK's most pressing issues. Elite institutions have validated PolicyEngine—HM Treasury published an official algorithmic transparency record (HM Treasury, 2024), and our estimates align with IFS, OBR, and Resolution Foundation. Building on this validation, we will expand the model's capabilities to address policy questions these institutions face.
+
+The previous Nuffield grant (Nuffield Foundation, 2024) built infrastructure (650 constituencies, childcare modelling (PolicyEngine, 2024a), AI pilot, validation dashboards) proving valuable beyond expectations to the UK's most powerful policy institutions. This demonstrates the model's relevance for critical policy questions and creates opportunity to enhance capacity further.
+
+The project combines proven capacity with strategic timing and sustained AI development. Budget cycles and elections create natural experiments for evidence evaluation. Our constituency data enables partnerships with local media and MPs. The three-year timeline tracks AI evolution while building dataset integrations enhancing model capacity and validation.
+
+This addresses Nuffield's interests in trustworthy institutions through evidence-based policymaking, technology serving society's needs, and prosperity through better-informed decisions on poverty and fiscal sustainability. The research capitalises on substantial previous investment while addressing how microsimulation can inform the UK's most critical policy questions.

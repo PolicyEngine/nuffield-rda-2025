@@ -1,1 +1,23 @@
-../docs/outline/responses/d_outcomes_and_influence.md
+| Impact Area | Indicator |
+|-------------|-----------|
+| Informing change to policies, systems or legislation | true |
+| Informing practice change | false |
+| Improving or advancing understanding or awareness of an issue | true |
+| Changing attitudes or perceptions | false |
+| Providing opportunity and building capability | true |
+
+This project will inform policy and legislative change during critical moments (Budgets, manifestos), improve understanding of distributional consequences, and build capability across diverse stakeholders.
+
+Our outputs directly inform policy debates when public attention peaks. Our rapid Budget analysis capacity ensures findings reach media and MPs within 48 hours of announcements. The poverty dashboard provides real-time tracking of child poverty—a major government priority—enabling accountability and evidence-based policy adjustments.
+
+We prioritise four audience segments with tailored engagement:
+
+Government and Parliament: Parliamentary constituency toolkit and targeted sessions enable MPs and officials to analyse local impacts, building on HM Treasury relationships.
+
+Media: Programme reaches journalists serving 650 constituencies through regional coverage, while national workshops ensure Budget analysis appears in quality outlets within news cycles.
+
+Civil Society: Workshops equip NGOs and charities with the same tools used by government. Pre-built templates lower barriers while maintaining strict political neutrality.
+
+Research Community: Conference presentations (9-12 over three years) and annual symposia share findings with academic economists, with open-source outputs enabling replication.
+
+Our success metrics include adoption by target audiences, media citations during policy moments, parliamentary usage, and measurable improvements in evidence quality within policy debates compared to baseline periods.
